@@ -1,0 +1,21 @@
+{
+  "name": "simple-web",
+  "authors": [
+    "Lucas buetto de Angelis <buetto.angelis@gmail.com>"
+  ],
+  "description": "Simple web project template, using jQuery 2+ with Bootstrap 3+ initially",
+  "main": "bower.json",
+  "license": "MIT",
+  "homepage": "lucasbuetto.com.br",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^2.2.4"
+  }
+}
