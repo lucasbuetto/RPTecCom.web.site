@@ -7,6 +7,7 @@ var
     gulpIf = require('gulp-if'),
     htmlMin = require('gulp-htmlmin'),
     jsUglify = require('gulp-uglify'),
+    pump =  require ('pump'),
     cssNano = require('gulp-cssnano'),
     imagemin = require('gulp-imagemin'),
     cache = require('gulp-cache'),
@@ -39,10 +40,19 @@ gulp.task('sassCompiler', function () {
         .pipe(gulp.dest('app/assets/css'))
 });
 
+gulp.task('jsOptimizer', function (cb) {
+    pump([
+        gulp.src(htmlFiles),
+        gulpIf('*.js', jsUglify()),
+        gulp.dest('dist')
+    ],
+    cb
+    )
+});
+
 gulp.task('projectOptimizer', function () {
     return gulp.src(htmlFiles)
         .pipe(useref())
-        .pipe(gulpIf('*.js', jsUglify()))
         .pipe(gulpIf('*.css', cssNano()))
         .pipe(gulpIf('*.html', htmlMin({ collapseWhitespace: true })))
         .pipe(gulp.dest(distDir))
@@ -73,10 +83,11 @@ gulp.task('compiler', [
     'fonts',
     'images',
     'sassCompiler',
-    'projectOptimizer',
+    'jsOptimizer',
+    'projectOptimizer'
 ]);
 
-gulp.task('build', [
+gulp.task('start', [
     'compiler',
     'watch',
     'browserSync'
