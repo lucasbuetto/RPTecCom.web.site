@@ -14,12 +14,13 @@ var
 
     //paths
     devDir = "app",
-    distDir = "www",
+    distDir = "dist",
     sassFiles = 'app/assets/sass/**/*.sass',
     scssFiles = 'app/assets/scss/**/*.scss',
     fontFiles = 'app/assets/fonts/**/*',
     imageFiles = 'app/assets/images/**/*.+(png|jpg|jpeg|gif|svg)',
-    jsFiles = 'app/**/*.js',
+    cssFiles = 'app/assets/css/**/*',
+    jsFiles = 'app/assets/js/**/*',
     jsonFiles = 'app/**/*.json',
     htmlFiles = 'app/**/*.html';
 
@@ -32,6 +33,23 @@ gulp.task('images', function () {
     return gulp.src(imageFiles)
         .pipe(cache(imagemin()))
         .pipe(gulp.dest(distDir + '/assets/images'))
+});
+
+gulp.task('css', function () {
+    return gulp.src(cssFiles)
+        .pipe(cssNano())
+        .pipe(gulp.dest(distDir + '/assets/css'))
+});
+
+gulp.task('js', function () {
+    return gulp.src(jsFiles)
+        .pipe(jsUglify())
+        .pipe(gulp.dest(distDir + '/assets/js'))
+});
+
+gulp.task('html', function () {
+    return gulp.src(htmlFiles)
+        .pipe(gulp.dest(distDir))
 });
 
 gulp.task('sassCompiler', function () {
@@ -48,14 +66,6 @@ gulp.task('jsOptimizer', function (cb) {
     ],
     cb
     )
-});
-
-gulp.task('projectOptimizer', function () {
-    return gulp.src(htmlFiles)
-        .pipe(useref())
-        .pipe(gulpIf('*.css', cssNano()))
-        .pipe(gulpIf('*.html', htmlMin({ collapseWhitespace: true })))
-        .pipe(gulp.dest(distDir))
 });
 
 gulp.task('watch', function () {
@@ -80,11 +90,13 @@ gulp.task('browserSync', function () {
 });
 
 gulp.task('compiler', [
-    'fonts',
-    'images',
     'sassCompiler',
     'jsOptimizer',
-    'projectOptimizer'
+    'fonts',
+    'images',
+    'css',
+    'js',
+    'html'
 ]);
 
 gulp.task('start', [
