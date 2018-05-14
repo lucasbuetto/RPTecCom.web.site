@@ -6,4 +6,5 @@ app/assets/css/
 bower_components/
 node_modules/
 www/
+dist/
 npm-debug.log
