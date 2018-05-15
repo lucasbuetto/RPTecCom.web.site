@@ -1,18 +1,18 @@
 {
-  "name": "simple-web",
+  "name": "rp-tec-com",
   "version": "1.0.0",
-  "description": "Simple web project template, using jQuery 2+ with Bootstrap 3+ initially",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://Buetto@bitbucket.org/lucasbuetto/simple-web.git"
+    "url": "https://Buetto@bitbucket.org/swordmasters/rpteccom.web.site.git"
   },
   "author": "Lucas Buetto De Angelis",
   "license": "MIT",
-  "homepage": "https://Buetto@bitbucket.org/lucasbuetto/simple-web.git#readme",
+  "homepage": "https://Buetto@bitbucket.org/swordmasters/rpteccom.web.site.git#readme",
   "devDependencies": {
     "bower": "1.8.2",
     "browser-sync": "2.23.5",
