@@ -116,6 +116,10 @@ body > * {
 	}
 }
 
+h1.mt-1.display-4.shadowed-text {
+  font-size: 8vw;
+}
+
 .pt-6, .py-6 {
   padding-top: 4rem !important;
 }
@@ -196,6 +200,10 @@ body > * {
         border-radius: 8px;
         color: rgba(255,255,255,.8);
         transition: all 250ms ease-in-out;
+
+        @media (max-width: 768px) {
+          padding: 10px;
+        }
       }
       
       .nav-item {
