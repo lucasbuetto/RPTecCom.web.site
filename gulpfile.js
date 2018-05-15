@@ -1,16 +1,18 @@
 'use strict';
 var
-    gulp = require('gulp'),
-    sass = require('gulp-sass'),
+    gulp        = require('gulp'),
+    del         = require('del'),
+    runSequence = require('run-sequence'),
+    sass        = require('gulp-sass'),
     browserSync = require('browser-sync').create(),
-    useref = require('gulp-useref'),
-    gulpIf = require('gulp-if'),
-    htmlMin = require('gulp-htmlmin'),
-    jsUglify = require('gulp-uglify'),
-    pump =  require ('pump'),
-    cssNano = require('gulp-cssnano'),
-    imagemin = require('gulp-imagemin'),
-    cache = require('gulp-cache'),
+    useref      = require('gulp-useref'),
+    gulpIf      = require('gulp-if'),
+    htmlMin     = require('gulp-htmlmin'),
+    jsUglify    = require('gulp-uglify'),
+    pump        =  require ('pump'),
+    cssNano     = require('gulp-cssnano'),
+    imagemin    = require('gulp-imagemin'),
+    cache       = require('gulp-cache'),
 
     //paths
     devDir = "app",
@@ -47,6 +49,11 @@ gulp.task('js', function () {
         .pipe(gulp.dest(distDir + '/assets/js'))
 });
 
+gulp.task('favicon', function () {
+    return gulp.src('app/assets/favicon/**')
+        .pipe(gulp.dest(distDir + '/assets/favicon'))
+});
+
 gulp.task('html', function () {
     return gulp.src(htmlFiles)
         .pipe(gulp.dest(distDir))
@@ -73,7 +80,7 @@ gulp.task('watch', function () {
         ['sassCompiler', browserSync.reload]
     );
     gulp.watch([jsFiles, jsonFiles, htmlFiles],
-        ['projectOptimizer', browserSync.reload]
+        ['js', browserSync.reload]
     );
 });
 
@@ -89,18 +96,34 @@ gulp.task('browserSync', function () {
     })
 });
 
-gulp.task('compiler', [
-    'sassCompiler',
-    'jsOptimizer',
-    'fonts',
-    'images',
-    'css',
-    'js',
-    'html'
-]);
+gulp.task('clean', function () {
+    return del(distDir+'/**', {force:true});
+});
+  
+
+gulp.task('build', function(e) {
+    runSequence(
+        'clean',
+        [
+            'sassCompiler',
+            'jsOptimizer',
+            'fonts',
+            'images',
+            'css',
+            'js',
+            'favicon'
+        ],
+        'html'
+    )
+});
 
 gulp.task('start', [
-    'compiler',
+    'build',
     'watch',
     'browserSync'
 ]);
+
+// Run commands
+gulp.task('c', ['clean']);
+gulp.task('s', ['start']);
+gulp.task('b', ['build']);
