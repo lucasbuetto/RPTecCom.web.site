@@ -14,6 +14,8 @@
     .not('[href="#"]')
     .click(function(event) {
       // On-page links
+      $('.navbar-nav .nav-item').removeClass('active');
+      $(this).parent('.nav-item').addClass('active');
       if (
         location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
         && 

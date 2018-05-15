@@ -71,6 +71,7 @@ $border-radius-sm: $border-radius * .8;
 
 html,body {
    height:100%;
+   position: relative;
 }
 
 body > * {
@@ -113,6 +114,14 @@ body > * {
   &:before {
     background: rgba(map-get($theme-colors,"info"),.75);
 	}
+}
+
+.pt-6, .py-6 {
+  padding-top: 4rem !important;
+}
+
+.pb-6, .py-6 {
+  padding-bottom: 4rem !important;
 }
 
 .inset-shadowed {
@@ -167,7 +176,7 @@ body > * {
   }
   
   &.navbar-ontop {
-    background-color: rgba(map-get($theme-colors,"primary"),.60) !important;
+    background-color: rgba(map-get($theme-colors,"primary"),1) !important;
 
     // .nav-item {
 
@@ -175,6 +184,31 @@ body > * {
     //     color: map-get($theme-colors, "dark" );
     //   }
     // }
+  }
+
+  &.navbar-dark {
+    
+    .navbar-nav {
+      
+      .nav-link {
+        font-weight: normal;
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 8px;
+        color: rgba(255,255,255,.8);
+        transition: all 250ms ease-in-out;
+      }
+      
+      .nav-item {
+
+        .nav-link {
+
+          &.active {
+            font-weight: bold;
+            background-color: rgba(255, 255, 255, 0.30);
+          }
+        }
+      }
+    }
   }
 }
 
