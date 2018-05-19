@@ -1,5 +1,6 @@
 'use strict';
 var
+    babel       = require('gulp-babel'),
     gulp        = require('gulp'),
     del         = require('del'),
     runSequence = require('run-sequence'),
@@ -8,11 +9,12 @@ var
     useref      = require('gulp-useref'),
     gulpIf      = require('gulp-if'),
     htmlMin     = require('gulp-htmlmin'),
-    jsUglify    = require('gulp-uglify'),
-    pump        =  require ('pump'),
+    uglify      = require('gulp-uglify'),
+    pump        = require ('pump'),
     cssNano     = require('gulp-cssnano'),
     imagemin    = require('gulp-imagemin'),
     cache       = require('gulp-cache'),
+    gutil       = require('gulp-util'),
 
     //paths
     devDir = "app",
@@ -22,7 +24,7 @@ var
     fontFiles = 'app/assets/fonts/**/*',
     imageFiles = 'app/assets/images/**/*.+(png|jpg|jpeg|gif|svg)',
     cssFiles = 'app/assets/css/**/*',
-    jsFiles = 'app/assets/js/**/*',
+    jsFiles = 'app/**/*.js',
     jsonFiles = 'app/**/*.json',
     htmlFiles = 'app/**/*.html';
 
@@ -45,8 +47,18 @@ gulp.task('css', function () {
 
 gulp.task('js', function () {
     return gulp.src(jsFiles)
-        .pipe(jsUglify())
-        .pipe(gulp.dest(distDir + '/assets/js'))
+    .pipe(babel({
+        presets: ['es2015']
+    }))
+    .pipe(uglify().on('error', function(e){
+        console.log(e);
+    }))
+    .pipe(gulp.dest(distDir))
+});
+
+gulp.task('json', function () {
+    return gulp.src(jsonFiles)
+    .pipe(gulp.dest(distDir))
 });
 
 gulp.task('favicon', function () {
@@ -68,7 +80,7 @@ gulp.task('sassCompiler', function () {
 gulp.task('jsOptimizer', function (cb) {
     pump([
         gulp.src(htmlFiles),
-        gulpIf('*.js', jsUglify()),
+        gulpIf('*.js', uglify()),
         gulp.dest('dist')
     ],
     cb
@@ -90,7 +102,7 @@ gulp.task('browserSync', function () {
             baseDir: devDir,
             routes: {
                 '/bower_components': 'bower_components',
-                '/www': distDir
+                '/dist': distDir
             }
         }
     })
@@ -106,11 +118,11 @@ gulp.task('build', function(e) {
         'clean',
         [
             'sassCompiler',
-            'jsOptimizer',
             'fonts',
             'images',
             'css',
             'js',
+            'json',
             'favicon'
         ],
         'html'
@@ -127,3 +139,15 @@ gulp.task('start', [
 gulp.task('c', ['clean']);
 gulp.task('s', ['start']);
 gulp.task('b', ['build']);
+
+// TESTS
+gulp.task('tstUglify', function(){
+    gulp.src('app/**/*.js')
+    .pipe(babel({
+        presets: ['es2015']
+    }))
+    .pipe(uglify().on('error', function(e){
+        console.log(e);
+    }))
+    .pipe(gulp.dest('dist'));
+});

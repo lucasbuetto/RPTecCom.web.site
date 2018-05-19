@@ -1,0 +1,34 @@
+[
+    {
+        "horary": "08:00",
+        "name": "Credenciamento"
+    },
+    {
+        "horary": "08:30",
+        "name": "Abertura"
+    },
+    {
+        "horary": "08:40",
+        "name": "Palestra 2 - Angular 2 com Antônio Cléssio da Consinco e AVSoft"
+    },
+    {
+        "horary": "10:10",
+        "name": "Coffee break"
+    },
+    {
+        "horary": "10:30",
+        "name": "Palestra 3 - Investimentos em Cloud com Felipe da iClinic"
+    },
+    {
+        "horary": "11:10",
+        "name": "Troca de palestra"
+    },
+    {
+        "horary": "11:20",
+        "name": "Mesa redonda - Internet of Things (IoT)"
+    },
+    {
+        "horary": "12:00",
+        "name": "Encerramento"
+    }
+]
