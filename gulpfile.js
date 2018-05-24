@@ -6,6 +6,7 @@ var
     runSequence = require('run-sequence'),
     sass        = require('gulp-sass'),
     browserSync = require('browser-sync').create(),
+    reload      = browserSync.reload,
     useref      = require('gulp-useref'),
     gulpIf      = require('gulp-if'),
     htmlMin     = require('gulp-htmlmin'),
@@ -88,12 +89,10 @@ gulp.task('jsOptimizer', function (cb) {
 });
 
 gulp.task('watch', function () {
-    gulp.watch([scssFiles, sassFiles],
-        ['sassCompiler', browserSync.reload]
-    );
-    gulp.watch([jsFiles, jsonFiles, htmlFiles],
-        ['js', browserSync.reload]
-    );
+    gulp.watch( [scssFiles, sassFiles],['sassCompiler'] )
+        .on("change", reload);
+    gulp.watch( [jsFiles, jsonFiles, htmlFiles],['js'] )
+        .on("change", reload);
 });
 
 gulp.task('browserSync', function () {
