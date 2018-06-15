@@ -16,6 +16,7 @@ Jump to:
 ### Prerequisites
 - [NodeJS v7.0.0+](https://nodejs.org/en/download/current/)
 - [Git v2.13.0+](https://git-scm.com/download/)
+- [Gulp CLI v1.4.0+](https://gulpjs.com/)
 
 ### Dependencies
 - jQuery 3.3.1
