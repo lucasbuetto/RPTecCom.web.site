@@ -47,8 +47,8 @@ function sponsorsList(jsonList) {
 
 $(function () {
 
-    getComponent('GET', '/assets/json/schedule.json', 'json', null, scheduleList);
-    getComponent('GET', '/assets/json/sponsors.json', 'json', null, sponsorsList);
+    getComponent('GET', 'assets/json/schedule.json', 'json', null, scheduleList);
+    getComponent('GET', 'assets/json/sponsors.json', 'json', null, sponsorsList);
 
     $('.navbar-collapse a').click(function (e) {
         $('.navbar-collapse').collapse('toggle');
