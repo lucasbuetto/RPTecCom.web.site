@@ -74,24 +74,35 @@ html,body {
    position: relative;
 }
 
+body {
+  padding-top: 66px;
+}
+
 body > * {
   background-position: center;
   overflow:hidden;
 }
 
 .front-page {
-  position: relative;
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
   color:white;
+
   &:before {
+    content: ' ';
+    background-color: #000;
+    background-image: url('../images/header.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
     position: absolute;
     top:0px;
     left:0px;
     width:100%;
     height: 100%;
-    content: ' ';
 	}
 }
 
