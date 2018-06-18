@@ -52,6 +52,12 @@ git clone https://github.com/lucasbuetto/RPTecCom.web.site.git
 npm install
 ```
 
+4- Install gulp.
+```shell
+npm install gulp-cli -g
+npm install gulp -D
+```
+
 5- Run gulp start to start node server in http://localhost:3000
 ```shell
 gulp start
