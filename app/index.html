@@ -35,6 +35,7 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbar2SupportedContent">
+  
   <!-- Navbar -->
   <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-primary">
     <div class="container">
@@ -72,6 +73,7 @@ px"> </a>
       </div>
     </div>
   </nav>
+  
   <!-- Cover -->
   <div class="d-flex align-items-center cover front-page bg-dark" id="meeting">
     <div class="container">
@@ -98,6 +100,7 @@ px"> </a>
       </div>
     </div>
   </div>
+  
   <!-- Info background -->
   <div class="py-6 text-center section-info section-primary" style="background-image: url('assets/images/section_1.jpg');" id="encontro">
     <div class="container p-2">
@@ -113,6 +116,7 @@ px"> </a>
       </div>
     </div>
   </div>
+  
   <!-- Themes -->
   <div class="py-6 bg-light" id="themes">
     <div class="container">
@@ -183,6 +187,7 @@ px"> </a>
       </div>
     </div>
   </div>
+  
   <!-- Speakers -->
   <div class="py-6 text-center" id="speakers">
     <div class="container">
@@ -249,6 +254,7 @@ px"> </a>
       </div>
     </div>
   </div>
+  
   <!-- Schedule -->
   <div class="py-6
  section-secondary" id="schedule" style="background-image: url('assets/images/cronograma.jpg');">
@@ -265,6 +271,7 @@ px"> </a>
       </div>
     </div>
   </div>
+  
   <!-- Sponsor logos -->
   <div class="py-6 section bg-light text-center" id="sponsors">
     <div class="container">
@@ -276,21 +283,25 @@ px"> </a>
       <div id="sponsorsList" class="row d-flex flex-row justify-content-center mb-3"></div>
     </div>
   </div>
+  
   <!-- Call to action -->
   <div class="py-6 section section-info" id="register" style="background-image: url('assets/images/inscrevase.jpg');">
     <div class="container">
       <div class="row">
         <div class="col-md-8 text-left">
-          <h1 class="mb-3 text-white">As inscrições estão abertas</h1>
-          <p>Pre-register to get a priority access to the event. Fares will be published later on.&nbsp;
-            <br>Get the maximum from the lectures with the possibility of joining exclusive events.</p>
-        </div>
-        <div class="col-md-4 align-self-center text-center animate-in-right">
-          <a href="#" class="btn btn-lg btn-dark my-3">Inscreva-se</a>
+          <div class="card transparency-05">
+            <h1 class="m-3 text-white shadowed-text">As inscrições estão abertas</h1>
+            <p class="m-3 shadowed-text">
+              Pre-register to get a priority access to the event. Fares will be published later on.&nbsp;
+              <br>Get the maximum from the lectures with the possibility of joining exclusive events.
+            </p>
+            <a href="#" class="btn btn-dark btn-lg m-3">Inscreva-se</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
   <!-- Location -->
   <div class="py-6 text-white" id="location">
     <div class="container">
@@ -328,6 +339,8 @@ px"> </a>
       </div>
     </div>
   </div>
+
+  <!-- Contact/footer -->
   <div class="py-6 text-white text-center bg-dark" id="contact">
     <div class="container">
       <div class="row">
@@ -341,14 +354,25 @@ px"> </a>
           <div id="c_row-2col-a" class="row pi-draggable">
             <div class="col-md-6">
               <i class="d-block  fa fa-phone fa-3x"></i>
-              <p class="lead">Matheus -&nbsp;(16) 98848-0228
-                <br>Murilo -&nbsp; (16) 99165-5609</p>
+              <table class="mx-auto">
+                  <tr>
+                    <td align="right"><p class="lead">Matheus:</p></td>
+                    <td><p class="lead"><a class="text-white" href="tel:+551698848-0228">(16) 98848-0228</a></p></td>
+                    <td><p class="lead"><i class="d-block ml-1 fa fa-whatsapp text-success"></p></i></td>
+                  </tr>
+                  <tr>
+                    <td align="right"><p class="lead">Murilo:</p></td>
+                    <td><p class="lead"><a class="text-white" href="tel:+551699165-5609">(16) 99165-5609</a></p></td>
+                    <td><p class="lead"><i class="d-block ml-1 fa fa-whatsapp text-success"></p></i></td>
+                  </tr>
+              </table>
             </div>
             <div class="col-md-6">
               <i class="d-block  fa fa-3x fa-envelope-o"></i>
               <p class="lead text-white">
                 <a href="mailto:matheus.calache@rpteccom.com" class="text-light"> matheus.calache@rpteccom.com </a>
-                <br>
+              </p>
+              <p class="lead text-white">
                 <a href="mailto:murilo.gomes@rpteccom.com" class="text-white"> murilo.gomes@rpteccom.com </a>
               </p>
             </div>
