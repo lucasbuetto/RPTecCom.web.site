@@ -51,7 +51,9 @@ $(function () {
     getComponent('GET', 'assets/json/sponsors.json', 'json', null, sponsorsList);
 
     $('.navbar-collapse a').click(function (e) {
-        $('.navbar-collapse').collapse('toggle');
+        if(window.outerWidth < 768) {
+            $('.navbar-collapse').collapse('toggle');
+        }
     });
 
 });
