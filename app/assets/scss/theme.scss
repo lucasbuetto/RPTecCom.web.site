@@ -83,6 +83,25 @@ body > * {
   overflow:hidden;
 }
 
+.card {
+
+  
+  &.card-transparent {
+    background-color: rgba(white, 0.5);
+    
+    .img-title {
+      margin: 20px;
+
+      @media(max-width: 768px) {
+        margin: 10px 5px;
+      }
+    }
+    .card-header {
+      background-color: rgba(white, 0.8);
+    }
+  } 
+}
+
 .front-page {
   background-size:cover;
   background-position: center;
@@ -128,6 +147,7 @@ body > * {
 }
 
 h1.mt-1.display-4.shadowed-text {
+  font-weight: 500;
 
   @media(max-width: 768px) {
     font-size: 8vw;
