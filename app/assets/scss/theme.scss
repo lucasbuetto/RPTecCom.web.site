@@ -86,8 +86,12 @@ body > * {
 .card {
 
   
-  &.card-transparent {
+  &.transparency-08 {
+    background-color: rgba(white, 0.8);
+  }
+  &.transparency-05 {
     background-color: rgba(white, 0.5);
+  }
     
     .img-title {
       margin: 20px;
@@ -100,7 +104,6 @@ body > * {
       background-color: rgba(white, 0.8);
     }
   } 
-}
 
 .front-page {
   background-size:cover;
@@ -128,21 +131,21 @@ body > * {
 .section-primary {
 	@extend .front-page;
   &:before {
-    background: rgba(map-get($theme-colors,"primary"),.75);
+    background: rgba(map-get($theme-colors,"primary"), .75);
 	}
 }
 
 .section-secondary {
 	@extend .front-page;
   &:before {
-    background: rgba(map-get($theme-colors,"secondary"),.75);
+    background: rgba(map-get($theme-colors,"secondary"), .75);
 	}
 }
 
 .section-info {
 	@extend .front-page;
   &:before {
-    background: rgba(map-get($theme-colors,"info"),.75);
+    background: rgba(map-get($theme-colors,"info"), .75);
 	}
 }
 
