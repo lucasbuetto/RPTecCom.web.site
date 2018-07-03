@@ -92,6 +92,13 @@ body > * {
   &.transparency-05 {
     background-color: rgba(white, 0.5);
   }
+  &.transparency-02 {
+    background-color: rgba(white, 0.2);
+  }
+  &.transparency-0 {
+    background-color: rgba(white, 0);
+    border: none;
+  }
     
     .img-title {
       margin: 20px;
