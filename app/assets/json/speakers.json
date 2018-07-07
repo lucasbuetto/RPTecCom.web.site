@@ -1,38 +1,32 @@
 [
     {
         "animate": "animate-in-left",
-        "image": "assets/images/palestrantes/Celso.jpg",
-        "name": "Celso",
-        "theme": "Inteligência Artificial (IA)"
+        "image": "assets/images/palestrantes/antonio_clessio.png",
+        "name": "Antônio Cléssio",
+        "theme": "Angular com Redux"
     },
     {
         "animate": "animate-in-down",
-        "image": "assets/images/palestrantes/Clessio.png",
-        "name": "Antônio Cléssio",
-        "theme": "Angular 2"
+        "image": "assets/images/palestrantes/default.svg",
+        "name": "Gustavo Bernardes",
+        "theme": "Qualidade e Engenharia de Software"
     },
     {
         "animate": "animate-in-right",
-        "image": "assets/images/palestrantes/Felipe.jpg",
-        "name": "Felipe",
-        "theme": "Investimentos em Cloud"
+        "image": "assets/images/palestrantes/default.svg",
+        "name": "Diego Teixeira",
+        "theme": "Gerenciamento de Filas (Queue) com RabbitMQ"
     },
     {
         "animate": "animate-in-left",
-        "image": "assets/images/palestrantes/Alexandre.jpg",
-        "name": "Alexandre",
-        "theme": "Não confirmado"
+        "image": "assets/images/palestrantes/default.svg",
+        "name": "Matheus Calache",
+        "theme": "Scrum e Kanban"
     },
     {
         "animate": "animate-in-down",
-        "image": "assets/images/palestrantes/Diogenes.jpg",
-        "name": "Diogenes",
-        "theme": "Não confirmado"
-    },
-    {
-        "animate": "animate-in-right",
-        "image": "assets/images/palestrantes/Allef.jpg",
-        "name": "Allef",
-        "theme": "Não confirmado"
+        "image": "assets/images/palestrantes/default.svg",
+        "name": "Felipe Muniz e Igor Oliveira",
+        "theme": "Testes de unidade automatizados"
     }
 ]
