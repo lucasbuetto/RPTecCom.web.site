@@ -1,0 +1,38 @@
+[
+    {
+        "animate": "animate-in-left",
+        "image": "assets/images/palestrantes/Celso.jpg",
+        "name": "Celso",
+        "theme": "Inteligência Artificial (IA)"
+    },
+    {
+        "animate": "animate-in-down",
+        "image": "assets/images/palestrantes/Clessio.png",
+        "name": "Antônio Cléssio",
+        "theme": "Angular 2"
+    },
+    {
+        "animate": "animate-in-right",
+        "image": "assets/images/palestrantes/Felipe.jpg",
+        "name": "Felipe",
+        "theme": "Investimentos em Cloud"
+    },
+    {
+        "animate": "animate-in-left",
+        "image": "assets/images/palestrantes/Alexandre.jpg",
+        "name": "Alexandre",
+        "theme": "Não confirmado"
+    },
+    {
+        "animate": "animate-in-down",
+        "image": "assets/images/palestrantes/Diogenes.jpg",
+        "name": "Diogenes",
+        "theme": "Não confirmado"
+    },
+    {
+        "animate": "animate-in-right",
+        "image": "assets/images/palestrantes/Allef.jpg",
+        "name": "Allef",
+        "theme": "Não confirmado"
+    }
+]

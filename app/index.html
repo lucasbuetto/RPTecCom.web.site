@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- PAGE settings -->
   <link rel="icon" href="">
-  <title>RP Tec Com 2018</title>
+  <title>RP Tec Com - 2017</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -35,11 +35,12 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbar2SupportedContent">
+  
   <!-- Navbar -->
   <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-primary">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="assets/images/logo/logo-white.svg" alt="RP Tec Com" width="" height="40px"> </a>
+        <img src="assets/images/logo/logo-white-header.svg" alt="RP Tec Com" width="" height="40"> </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -55,25 +56,157 @@
       </div>
     </div>
   </nav>
+  
   <!-- Cover -->
-  <div class="d-flex align-items-center bg-primary cover front-page" style="background-image: url('assets/images/header.jpg');" id="meeting">
+  <div class="d-flex align-items-center cover front-page bg-dark" id="meeting">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 text-white text-center">
-          <img class="img-fluid d-block mx-auto" src="assets/images/RP-TEC-COM-100px.png">
-          <h1 class="mt-1 display-4 shadowed-text">
-            EM BREVE 
-            <br>
-            EDIÇÃO 2018
-          </h1>
-          <h4 class="shadowed-text">Nosso objetivo é promover encontros, eventos, networking e capacitações de Tecnologia na Região Metropolitana de Ribeirão Preto.</h4>
-          <i class="d-block fa fa-angle-down pt-5 fa-3x"></i>
+        <div class="col-lg-8 offset-lg-2 text-white text-center">
+          <div class="card transparency-0">
+            
+            <img class="img-title img-fluid d-block" src="assets/images/logo/logo-color-slogan-white.svg">
+            <h1 class="mt-1 display-4 shadowed-text">
+              Nosso primeiro encontro
+              <br>
+              21 de Outubro de 2017
+            </h1>
+            <h1 class="mt-1 display-4 shadowed-text">08:00 às 12:00</h1>
+            <p class="shadowed-text">Ribeirão Preto, SP</p>
+            <p class="shadowed-text">No nosso primeiro encontro da RP Tec Com, iremos trazer para a nossa comunidade de TI alguns assuntos muito interessantes.</p>
+
+            <a  href="#themes" target="_blank" class="btn btn-lg m-2 btn-info">VEJA NOSSOS TEMAS</a>
+            <a  href="https://www.sympla.com.br/rp-tec-com-n1__200809" target="_blank" class="btn btn-lg m-2 btn-light">INSCREVA-SE!</a>
+
+          </div>
         </div>
       </div>
     </div>
   </div>
   
-  <!-- Contact -->
+  <!-- Info background -->
+  <div class="py-6 text-center section-info section-primary" style="background-image: url('assets/images/section_1.jpg');" id="encontro">
+    <div class="container p-2">
+      <div class="row mx-auto">
+        <div class="col-md-12">
+          <div class="card p-5">
+            <h1 class="mb-3 display-4 text-dark">COMUNIDADE TECNOLÓGICA DE RIBEIRÃO PRETO</h1>
+            <p class="text-dark">Nosso objetivo é promover encontros, eventos, networking e capacitações de Tecnologia na Região Metropolitana de Ribeirão Preto. </p>
+            <a href="#schedule" class="btn btn-lg m-2 btn-secondary">Cronograma</a>
+            <a class="btn btn-primary btn-lg m-2" href="#register">Inscreva-se</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Themes -->
+  <div class="py-6 bg-light" id="themes">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 class="mb-4">Temas do primeiro encontro</h1>
+          <div id="themesList" class="row text-left mt-5"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Speakers -->
+  <div class="py-6 text-center" id="speakers">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Palestrantes</h1>
+        </div>
+      </div>
+      <div id="speakersList" class="row"></div>
+    </div>
+  </div>
+  
+  <!-- Schedule -->
+  <div class="py-6
+ section-secondary" id="schedule" style="background-image: url('assets/images/cronograma.jpg');">
+    <div class="container">
+      <div class="row text-left">
+        <div class="p-4 col-lg-12 animate-in-right">
+          <div class="card text-dark">
+            <div class="card-block text-center p-2">
+              <h2>Cronograma</h2>
+            </div>
+            <ul id="scheduleList" class="list-group list-group-flush"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Sponsor logos -->
+  <div class="py-6 section bg-light text-center" id="sponsors">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="mb-4">Quem está nos apoiando</h1>
+        </div>
+      </div>
+      <div id="sponsorsList" class="row d-flex flex-row justify-content-center mb-3"></div>
+    </div>
+  </div>
+  
+  <!-- Call to action -->
+  <div class="py-6 section section-info" id="register" style="background-image: url('assets/images/inscrevase.jpg');">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 text-left">
+          <div class="card transparency-02">
+            <h1 class="m-3 text-white shadowed-text">As inscrições estão abertas</h1>
+            <p class="m-3 shadowed-text d-none">
+            </p>
+            <a href="#" class="btn btn-warning btn-lg m-3">Inscreva-se</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Location -->
+  <div class="py-6 text-white" id="location">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center align-self-center">
+          <p class="mb-5 text-bold text-dark">
+            <strong class="text-center text-uppercase">LOCALIZAÇÃO</strong>
+            <br><a href="http://reges.com.br/ribeiraopreto/" target="_blank"><img src="assets/images/apoio/logo-reges.jpg" alt="Faculdade Reges"></a>
+            <br>R. Dr. Benjamin Anderson Stauffer, 801
+            <br>Jardim Botânico, Ribeirão Preto - SP
+            <br>(16) 2138-1868</p>
+          <div class="my-3 row">
+            <div class="col-4">
+              <a href="https://www.facebook.com" target="_blank">
+                <i class="fa fa-3x fa-facebook"></i>
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="https://twitter.com" target="_blank">
+                <i class="fa fa-3x fa-twitter"></i>
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="https://www.instagram.com" target="_blank">
+                <i class="fa fa-3x fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 p-0">
+          <a href="" target="_
+                             blank">
+            <img class="img-fluid" src="assets/images/map.jpg"> </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact/footer -->
   <div class="py-6 text-white text-center bg-dark" id="contact">
     <div class="container">
       <div class="row">
@@ -87,14 +220,25 @@
           <div id="c_row-2col-a" class="row pi-draggable">
             <div class="col-md-6">
               <i class="d-block  fa fa-phone fa-3x"></i>
-              <p class="lead">Matheus -&nbsp;(16) 98848-0228
-                <br>Murilo -&nbsp; (16) 99165-5609</p>
+              <table class="mx-auto">
+                  <tr>
+                    <td align="right"><p class="lead">Matheus:</p></td>
+                    <td><p class="lead"><a class="text-white" href="tel:+551698848-0228">(16) 98848-0228</a></p></td>
+                    <td><p class="lead"><i class="d-block ml-1 fa fa-whatsapp text-success"></p></i></td>
+                  </tr>
+                  <tr>
+                    <td align="right"><p class="lead">Murilo:</p></td>
+                    <td><p class="lead"><a class="text-white" href="tel:+551699165-5609">(16) 99165-5609</a></p></td>
+                    <td><p class="lead"><i class="d-block ml-1 fa fa-whatsapp text-success"></p></i></td>
+                  </tr>
+              </table>
             </div>
             <div class="col-md-6">
               <i class="d-block  fa fa-3x fa-envelope-o"></i>
               <p class="lead text-white">
                 <a href="mailto:matheus.calache@rpteccom.com" class="text-light"> matheus.calache@rpteccom.com </a>
-                <br>
+              </p>
+              <p class="lead text-white">
                 <a href="mailto:murilo.gomes@rpteccom.com" class="text-white"> murilo.gomes@rpteccom.com </a>
               </p>
             </div>

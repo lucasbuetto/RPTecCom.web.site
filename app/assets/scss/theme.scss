@@ -74,49 +74,94 @@ html,body {
    position: relative;
 }
 
+body {
+  padding-top: 66px;
+}
+
 body > * {
   background-position: center;
   overflow:hidden;
 }
 
+p {
+  font-size: 22px !important;
+}
+
+.card {
+
+  
+  &.transparency-08 {
+    background-color: rgba(white, 0.8);
+  }
+  &.transparency-05 {
+    background-color: rgba(white, 0.5);
+  }
+  &.transparency-02 {
+    background-color: rgba(white, 0.2);
+  }
+  &.transparency-0 {
+    background-color: rgba(white, 0);
+    border: none;
+  }
+    
+    .img-title {
+      margin: 20px;
+
+      @media(max-width: 768px) {
+        margin: 10px 5px;
+      }
+    }
+    .card-header {
+      background-color: rgba(white, 0.8);
+    }
+  } 
+
 .front-page {
-  position: relative;
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
   color:white;
+
   &:before {
+    content: ' ';
+    background-color: #000;
+    background-image: url('../images/header.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
     position: absolute;
     top:0px;
     left:0px;
     width:100%;
     height: 100%;
-    content: ' ';
 	}
 }
 
 .section-primary {
 	@extend .front-page;
   &:before {
-    background: rgba(map-get($theme-colors,"primary"),.75);
+    background: rgba(map-get($theme-colors,"primary"), .75);
 	}
 }
 
 .section-secondary {
 	@extend .front-page;
   &:before {
-    background: rgba(map-get($theme-colors,"secondary"),.75);
+    background: rgba(map-get($theme-colors,"secondary"), .75);
 	}
 }
 
 .section-info {
 	@extend .front-page;
   &:before {
-    background: rgba(map-get($theme-colors,"info"),.75);
+    background: rgba(map-get($theme-colors,"info"), .75);
 	}
 }
 
-h1.mt-1.display-4.shadowed-text {
+h1.display-4 {
+  font-weight: 500;
 
   @media(max-width: 768px) {
     font-size: 8vw;
