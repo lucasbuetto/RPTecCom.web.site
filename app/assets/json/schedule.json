@@ -1,34 +1,80 @@
 [
     {
         "horary": "08:00",
-        "name": "Credenciamento"
+        "theme": "Credenciamento",
+        "speaker": "",
+        "trail": ""
     },
     {
         "horary": "08:30",
-        "name": "Abertura"
+        "theme": "Abertura",
+        "speaker": "Matheus Calache e Murilo Gomes",
+        "trail": ""
     },
     {
         "horary": "08:40",
-        "name": "Palestra 2 - Angular 2 com Antônio Cléssio da Consinco e AVSoft"
+        "theme": "Angular com Redux",
+        "speaker": "Antônio Cléssio",
+        "trail": "Técnico"
+    },
+    {
+        "horary": "09:20",
+        "theme": "Troca de palestra",
+        "speaker": "",
+        "trail": ""
+    },
+    {
+        "horary": "09:30",
+        "theme": "Qualidade e Engenharia de Software",
+        "speaker": "Gustavo Bernardes",
+        "trail": "Negócio"
     },
     {
         "horary": "10:10",
-        "name": "Coffee break"
+        "theme": "Coffee-break",
+        "speaker": "",
+        "trail": ""
     },
     {
         "horary": "10:30",
-        "name": "Palestra 3 - Investimentos em Cloud com Felipe da iClinic"
+        "theme": "Gerenciamento de Filas (Queue) com RabbitMQ",
+        "speaker": "Diego Teixeira",
+        "trail": "Técnico"
     },
     {
         "horary": "11:10",
-        "name": "Troca de palestra"
+        "theme": "Troca de palestra",
+        "speaker": "",
+        "trail": ""
     },
     {
         "horary": "11:20",
-        "name": "Mesa redonda - Internet of Things (IoT)"
+        "theme": "Scrum e Kanban",
+        "speaker": "Matheus Calache",
+        "trail": "Negócio"
+    },
+    {
+        "horary": "11:50",
+        "theme": "Troca de palestra",
+        "speaker": "",
+        "trail": ""
     },
     {
         "horary": "12:00",
-        "name": "Encerramento"
+        "theme": "Testes de unidade automatizados",
+        "speaker": "Felipe Muniz e Igor Oliveira",
+        "trail": "Técnico"
+    },
+    {
+        "horary": "12:40",
+        "theme": "Encerramento e Sorteios",
+        "speaker": "Matheus Calache e Murilo Gomes",
+        "trail": ""
+    },
+    {
+        "horary": "13:00",
+        "theme": "Fim",
+        "speaker": "",
+        "trail": ""
     }
 ]
