@@ -83,6 +83,10 @@ body > * {
   overflow:hidden;
 }
 
+p {
+  font-size: 22px !important;
+}
+
 .card {
 
   
@@ -156,7 +160,7 @@ body > * {
 	}
 }
 
-h1.mt-1.display-4.shadowed-text {
+h1.display-4 {
   font-weight: 500;
 
   @media(max-width: 768px) {
