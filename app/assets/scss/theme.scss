@@ -87,7 +87,15 @@ p {
   font-size: 22px !important;
 }
 
+.scroll {
+  overflow: auto;
+}
+
 .card {
+
+  @media(max-width: 768px) {
+    padding: 10px !important;
+  }
 
   
   &.transparency-08 {
