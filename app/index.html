@@ -47,12 +47,28 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbar2SupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item mx-1 active">
-            <a class="nav-link" href="#meeting">Ínicio</a>
+            <a class="nav-link" href="#meeting">Encontro</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" href="#themes">Temas</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" href="#speakers">Palestrantes</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" href="#schedule">Cronograma</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" href="#sponsors">Apoio</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" href="#location">Localização</a>
           </li>
           <li class="nav-item mx-1">
             <a class="nav-link" href="#contact">Contato</a>
           </li>
         </ul>
+        <a class="btn btn-outline-light navbar-btn mx-1" href="https://www.sympla.com.br/rp-tec-com-n1__200809" target="_blank">INSCRIÇÃO</a>
       </div>
     </div>
   </nav>
@@ -124,16 +140,29 @@
   </div>
   
   <!-- Schedule -->
-  <div class="py-6
- section-secondary" id="schedule" style="background-image: url('assets/images/cronograma.jpg');">
+  <div class="py-6 section-secondary" id="schedule" style="background-image: url('assets/images/cronograma.jpg');">
     <div class="container">
       <div class="row text-left">
         <div class="p-4 col-lg-12 animate-in-right">
           <div class="card text-dark">
             <div class="card-block text-center p-2">
               <h2>Cronograma</h2>
+              <div class="scroll">
+                <table id="scheduleList" class="table table-striped table-sm">
+                  <thead class="thead-dark">
+                      <tr>
+                          <th scope="col">Horário</th>
+                          <th scope="col">Tema</th>
+                          <th scope="col">Palestrante</th>
+                          <th scope="col">Trilha</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                </table>
+              </div>
             </div>
-            <ul id="scheduleList" class="list-group list-group-flush"></ul>
+            <!-- <ul id="scheduleList" class="list-group list-group-flush"></ul> -->
           </div>
         </div>
       </div>

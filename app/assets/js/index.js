@@ -22,12 +22,21 @@ function scheduleList(jsonList) {
     for (var i = 0; i < jsonList.length; i++) {
         var item = jsonList[i];
         var template = `
-            <li class="list-group-item">
-                <i class="mx-auto fa d-inline fa-clock-o text-primary"></i>
-                ${item.horary} | <b>${item.name}</b>
-            </li>
-        `;
-        $('#scheduleList').append(template);
+            <tr>
+                <th scope="row">
+                    <i class="mx-auto d-inline fa fa-clock-o text-primary"></i>
+                    ${item.horary}
+                </th>
+                <td>${item.theme}</td>
+                <td>${item.speaker}</td>
+                <td>${item.trail}</td>
+            </tr>
+            `;
+            // <li class="list-group-item">
+            //     <i class="mx-auto fa d-inline fa-clock-o text-primary"></i>
+            //     ${item.horary} | <b>${item.name}</b>
+            // </li>
+        $('#scheduleList tbody').append(template);
     };
 }
 
