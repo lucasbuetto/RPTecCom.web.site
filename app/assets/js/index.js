@@ -45,10 +45,52 @@ function sponsorsList(jsonList) {
     };
 }
 
+function themesList(jsonList) {
+    for (var i = 0; i < jsonList.length; i++) {
+        var item = jsonList[i];
+        var template = `
+            <div class="col-md-4 my-3">
+                <div class="row mb-3">
+                    <div class="text-center col-2">
+                        <i class="d-block mx-auto fa fa-3x ${item.icon}"></i>
+                    </div>
+                    <div class="align-self-center col-10">
+                        <h3 class="ml-1">
+                            <b>${item.theme}</b>
+                        </h3>
+                    </div>
+                </div>
+                <p>${item.description}</p>
+            </div>
+        `;
+        $('#themesList').append(template);
+    };
+}
+
+function speakersList(jsonList) {
+    for (var i = 0; i < jsonList.length; i++) {
+        var item = jsonList[i];
+        var template = `
+            <div class="col-6 col-lg-4 ${item.animate}">
+                <div>
+                    <img src="${item.image}" class="center-block img-fluid my-3 rounded-circle" width="300">
+                    <h3 class="mb-0 text-primary">
+                        <b>${item.name}</b>
+                    </h3>
+                    <p class="text-muted">${item.theme}</p>
+                </div>
+            </div>
+        `;
+        $('#speakersList').append(template);
+    };
+}
+
 $(function () {
 
     getComponent('GET', 'assets/json/schedule.json', 'json', null, scheduleList);
     getComponent('GET', 'assets/json/sponsors.json', 'json', null, sponsorsList);
+    getComponent('GET', 'assets/json/themes.json', 'json', null, themesList);
+    getComponent('GET', 'assets/json/speakers.json', 'json', null, speakersList);
 
     $('.navbar-collapse a').click(function (e) {
         if(window.outerWidth < 768) {
