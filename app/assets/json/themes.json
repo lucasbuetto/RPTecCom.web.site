@@ -1,22 +1,27 @@
 [
     {
-        "icon": "fa-lightbulb-o",
-        "theme": "Inteligência Artificial",
-        "description": "O Celso, diretor da DataH, irá comentar sobre Inteligência Artificial (IA) e os projetos que estão sendo desenvolvidos pela DataH, a fim de atender necessidades reais do nosso mercado."
+        "icon": "fab fa-angular",
+        "theme": "Angular com Redux",
+        "description": "Antônio Cléssio, analista de sistemas da Swfast, vai apresentar como aplicar Angular com Redux."
     },
     {
-        "icon": "fa-code",
-        "theme": "Angular 2+",
-        "description": "O Antônio Cléssio, analista de sistemas da Consinco e co-fundador da AvSoft, irá falar sobre sua experiência no desenvolvimento de aplicações com Angular 2 comentando sobre as vantagens em utilizar a tecnologia, e como o desenvolvedor pode pensar na hora de projetar e codificar uma aplicação."
+        "icon": "fab fa-searchengin",
+        "theme": "Qualidade e Engenharia de Software",
+        "description": "Gustavo Bernardes, analista de qualidade de software na Swfast, falará sobre qualidade, muito além dos testes, dentro dos projetos de software."
     },
     {
-        "icon": "fa-cloud",
-        "theme": "Cloud Computing",
-        "description": "O Felipe, CEO da iClinic, irá expor para a gente toda a sua experiência no assunto e como obter ganhos com o Cloud Computing, além de comentar sobre como calcular os custos de sistemas SaaS."
+        "icon": "fas fa-align-left",
+        "theme": "Gerenciamento de Filas (Queue) com RabbitMQ",
+        "description": "Diego Teixeira , analista de sistemas da SwFast, vai falar sobre sua experiência com filas  e o RabbitMQ, comentando o funcionamento e demonstrando algumas aplicações."
     },
     {
-        "icon": "fa-sitemap",
-        "theme": "IoT",
-        "description": "Aqui, teremos uma mesa redonda com o Alexandre, da Innowatt, junto com o Diogenes e o Allef, ambos mestrandos do Departamento de Computação e Matemática da USP Ribeirão Preto. Eles irão conduzir um papo e tirar dúvidas sobre Internet of Things (IoT), campo da computação que tem crescido e ganhado bastante importância."
+        "icon": "fas fa-sync",
+        "theme": "Scrum e Kanban",
+        "description": "Matheus Calache, Arquiteto de Software e Líder de Desenvolvimento na Swfast. Scrum e Kanban Board, uma forma simples, eficiente e eficaz de se utilizá-los."
+    },
+    {
+        "icon": "fas fa-magic",
+        "theme": "Testes de unidade automatizados",
+        "description": "Felipe Muniz e Igor Rozani, analistas de sistemas da SwFast, vão falar sobre sua experiência com testes de unidade, comentando as vantagens, dificuldades e os ganhos de qualidade ao se utilizar."
     }
 ]
