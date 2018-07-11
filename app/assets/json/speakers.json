@@ -1,31 +1,31 @@
 [
     {
         "animate": "animate-in-left",
-        "image": "assets/images/palestrantes/antonio_clessio.png",
+        "image": "assets/images/palestrantes/antonio_clessio.jpg",
         "name": "Antônio Cléssio",
         "theme": "Angular com Redux"
     },
     {
         "animate": "animate-in-down",
-        "image": "assets/images/palestrantes/default.svg",
+        "image": "assets/images/palestrantes/gustavo_bernardes.jpg",
         "name": "Gustavo Bernardes",
         "theme": "Qualidade e Engenharia de Software"
     },
     {
         "animate": "animate-in-right",
-        "image": "assets/images/palestrantes/default.svg",
+        "image": "assets/images/palestrantes/diego_teixeira.jpg",
         "name": "Diego Teixeira",
         "theme": "Gerenciamento de Filas (Queue) com RabbitMQ"
     },
     {
         "animate": "animate-in-left",
-        "image": "assets/images/palestrantes/default.svg",
+        "image": "assets/images/palestrantes/matheus_calache.jpg",
         "name": "Matheus Calache",
         "theme": "Scrum e Kanban"
     },
     {
         "animate": "animate-in-down",
-        "image": "assets/images/palestrantes/default.svg",
+        "image": "assets/images/palestrantes/felipe_muniz_e_Igor_oliveira.jpg",
         "name": "Felipe Muniz e Igor Oliveira",
         "theme": "Testes de unidade automatizados"
     }

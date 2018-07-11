@@ -24,7 +24,7 @@ function scheduleList(jsonList) {
         var template = `
             <tr>
                 <th scope="row">
-                    <i class="mx-auto d-inline fa fa-clock-o text-primary"></i>
+                    <i class="mx-auto d-inline far fa-clock text-primary"></i>
                     ${item.horary}
                 </th>
                 <td>${item.theme}</td>
@@ -61,7 +61,7 @@ function themesList(jsonList) {
             <div class="col-md-4 my-3">
                 <div class="row mb-3">
                     <div class="text-center col-2">
-                        <i class="d-block mx-auto fa fa-3x ${item.icon}"></i>
+                        <i class="d-block mx-auto fa-3x ${item.icon}"></i>
                     </div>
                     <div class="align-self-center col-10">
                         <h3 class="ml-1">
