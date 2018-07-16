@@ -1,0 +1,34 @@
+{
+    "name": "RP Tec Com",
+    "year": "2018",
+    "eventDate": "21 de outubro de 2018",
+    "eventPeriod": "08:00 às 12:00",
+    "subscription": "SYMPLA_OR_OTHER_SUBSCRIPTION_SYSTEM",
+    "facebook": "",
+    "twitter": "",
+    "Instagram": "",
+    "location": {
+        "name": "Faculdade Reges",
+        "imageSrc": "http://localhost:3000/assets/images/apoio/logo-reges.jpg",
+        "street": "R. Dr. Benjamin Anderson Stauffer, 801",
+        "district": "Jardim Botânico, Ribeirão Preto - SP",
+        "phone": "(16) 2138-1868",
+        "facebook": "",
+        "twitter": "",
+        "Instagram": ""
+    },
+    "idealizers": [
+        {
+            "name": "Matheus",
+            "phone": "(16) 98848-0228",
+            "isWhatsApp": true,
+            "email": "matheus.calache@rpteccom.com"
+        },
+        {
+            "name": "Murilo",
+            "phone": "(16) 99165-5609",
+            "isWhatsApp": true,
+            "email": "murilo.gomes@rpteccom.com"
+        }
+    ]
+}
