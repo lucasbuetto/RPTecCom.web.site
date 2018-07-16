@@ -2,26 +2,26 @@
     {
         "icon": "fab fa-angular",
         "theme": "Angular com Redux",
-        "description": "Antônio Cléssio, analista de sistemas da Swfast, vai apresentar como aplicar Angular com Redux."
+        "description": "Antônio Cléssio, analista de sistemas, vai apresentar como aplicar Angular com Redux."
     },
     {
         "icon": "fab fa-searchengin",
         "theme": "Qualidade e Engenharia de Software",
-        "description": "Gustavo Bernardes, analista de qualidade de software na Swfast, falará sobre qualidade, muito além dos testes, dentro dos projetos de software."
+        "description": "Gustavo Bernardes, analista de qualidade de software, falará sobre qualidade, muito além dos testes, dentro dos projetos de software."
     },
     {
         "icon": "fas fa-align-left",
         "theme": "Gerenciamento de Filas (Queue) com RabbitMQ",
-        "description": "Diego Teixeira , analista de sistemas da SwFast, vai falar sobre sua experiência com filas  e o RabbitMQ, comentando o funcionamento e demonstrando algumas aplicações."
+        "description": "Diego Teixeira , analista de sistemas, vai falar sobre sua experiência com filas  e o RabbitMQ, comentando o funcionamento e demonstrando algumas aplicações."
     },
     {
         "icon": "fas fa-sync",
         "theme": "Scrum e Kanban",
-        "description": "Matheus Calache, Arquiteto de Software e Líder de Desenvolvimento na Swfast. Scrum e Kanban Board, uma forma simples, eficiente e eficaz de se utilizá-los."
+        "description": "Matheus Calache, Arquiteto de Software e Líder de Desenvolvimento. Scrum e Kanban Board, uma forma simples, eficiente e eficaz de se utilizá-los."
     },
     {
         "icon": "fas fa-magic",
         "theme": "Testes de unidade automatizados",
-        "description": "Felipe Muniz e Igor Rozani, analistas de sistemas da SwFast, vão falar sobre sua experiência com testes de unidade, comentando as vantagens, dificuldades e os ganhos de qualidade ao se utilizar."
+        "description": "Felipe Muniz e Igor Rozani, analistas de sistemas, vão falar sobre sua experiência com testes de unidade, comentando as vantagens, dificuldades e os ganhos de qualidade ao se utilizar."
     }
 ]
