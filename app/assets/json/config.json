@@ -1,34 +1,22 @@
 {
     "name": "RP Tec Com",
     "year": "2018",
-    "eventDate": "21 de outubro de 2018",
-    "eventPeriod": "08:00 às 12:00",
-    "subscription": "SYMPLA_OR_OTHER_SUBSCRIPTION_SYSTEM",
+    "eventDate": "18 de agosto de 2018",
+    "eventPeriod": "07:30 às 13:00",
+    "subscriptionUrl": "#SYMPLA_OR_OTHER_SUBSCRIPTION_SYSTEM",
     "facebook": "",
     "twitter": "",
     "Instagram": "",
     "location": {
         "name": "Faculdade Reges",
-        "imageSrc": "http://localhost:3000/assets/images/apoio/logo-reges.jpg",
+        "imageSrc": "assets/images/apoio/logo-reges.jpg",
         "street": "R. Dr. Benjamin Anderson Stauffer, 801",
         "district": "Jardim Botânico, Ribeirão Preto - SP",
         "phone": "(16) 2138-1868",
+        "website": "http://reges.com.br/ribeiraopreto/",
         "facebook": "",
         "twitter": "",
-        "Instagram": ""
-    },
-    "idealizers": [
-        {
-            "name": "Matheus",
-            "phone": "(16) 98848-0228",
-            "isWhatsApp": true,
-            "email": "matheus.calache@rpteccom.com"
-        },
-        {
-            "name": "Murilo",
-            "phone": "(16) 99165-5609",
-            "isWhatsApp": true,
-            "email": "murilo.gomes@rpteccom.com"
-        }
-    ]
+        "instagram": "",
+        "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.5655963524136!2d-47.79803168449524!3d-21.209408984840454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9b8abe0537cc1%3A0x443a578977e7e330!2sFaculdade+REGES+de+Ribeir%C3%A3o+Preto!5e0!3m2!1spt-BR!2sbr!4v1531923958263"
+    }
 }

@@ -94,8 +94,60 @@ function speakersList(jsonList) {
     };
 }
 
+function configuration(config) {
+    console.log(config);
+
+    //Set site title
+    $('title').text(config.name + ' ' + config.year);
+
+    //Set Event informations
+    $('[eventDate]').text(config.eventDate);
+    $('[eventPeriod]').text(config.eventPeriod);
+    $('[subscriptionUrl]').text(config.subscriptionUrl);
+
+    //Set Location
+    var location = config.location;
+    var locationTemplate = `
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center align-self-center">
+                <p class="mb-5 text-bold text-dark">
+                    <strong class="text-center text-uppercase">LOCALIZAÇÃO</strong>
+                    <br><a href="${location.website}" target="_blank"><img src="${location.imageSrc}" alt="${location.name}"></a>
+                    <br>${location.street}
+                    <br>${location.district}
+                    <br>${location.phone}</p>
+                <div class="my-3 row">
+                    <div class="col-4 ${location.facebook == "" ? 'd-none' : ''}">
+                    <a href="${location.facebook}" target="_blank">
+                        <i class="fab fa-3x fa-facebook"></i>
+                    </a>
+                    </div>
+                    <div class="col-4 ${location.twitter == "" ? 'd-none' : ''}">
+                    <a href="${location.twitter}" target="_blank">
+                        <i class="fab fa-3x fa-twitter"></i>
+                    </a>
+                    </div>
+                    <div class="col-4 ${location.instagram == "" ? 'd-none' : ''}">
+                    <a href="${location.instagram}" target="_blank">
+                        <i class="fab fa-3x fa-instagram"></i>
+                    </a>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-6 p-0">
+                <iframe src="${location.googleMapsEmbedUrl}" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    `;
+    $("#location").html(locationTemplate);
+
+}
+
 $(function () {
 
+    getComponent('GET', 'assets/json/config.json', 'json', null, configuration);
     getComponent('GET', 'assets/json/schedule.json', 'json', null, scheduleList);
     getComponent('GET', 'assets/json/sponsors.json', 'json', null, sponsorsList);
     getComponent('GET', 'assets/json/themes.json', 'json', null, themesList);
