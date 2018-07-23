@@ -1,0 +1,47 @@
+[
+    {
+        "name": "avsoft",
+        "url": "http://reges.com.br/ribeiraopreto/",
+        "srcImage": "assets/images/apoio/logo-avsoft.jpg"
+    },
+    {
+        "name": "Data H",
+        "url": "https://www.datah.com.br/",
+        "srcImage": "assets/images/apoio/logo-datah.jpg"
+    },
+    {
+        "name": "iClinic",
+        "url": "http://iclinic.com.br/",
+        "srcImage": "assets/images/apoio/logo-iclinic.jpg"
+    },
+    {
+        "name": "Innowatt",
+        "url": "http://www.innowatt.ind.br/",
+        "srcImage": "assets/images/apoio/logo-innowatt.jpg"
+    },
+    {
+        "name": "MAG IT",
+        "url": "http://www.mag-it.com.br/",
+        "srcImage": "assets/images/apoio/logo-magit2.jpg"
+    },
+    {
+        "name": "faculdade REGES",
+        "url": "http://reges.com.br/ribeiraopreto/",
+        "srcImage": "assets/images/apoio/logo-reges.jpg"
+    },
+    {
+        "name": "Swfast",
+        "url": "http://www.swfast.com.br/",
+        "srcImage": "assets/images/apoio/logo-swfast.jpg"
+    },
+    {
+        "name": "Tree Inova",
+        "url": "http://treeinova.com.br/",
+        "srcImage": "assets/images/apoio/logo-treeinova.jpg"
+    },
+    {
+        "name": "SwordMaster",
+        "url": "http://swordmaster.com.br/",
+        "srcImage": "assets/images/apoio/logo_swordmaster_vertical.jpg"
+    }
+]

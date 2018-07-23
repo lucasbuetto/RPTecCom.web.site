@@ -103,7 +103,12 @@ function configuration(config) {
     //Set Event informations
     $('[eventDate]').text(config.eventDate);
     $('[eventPeriod]').text(config.eventPeriod);
-    $('[subscriptionUrl]').text(config.subscriptionUrl);
+    if(config.subscriptionUrl == null || config.subscriptionUrl == "" | config.subscriptionUrl == undefined) {
+        $('[subscriptionUrl]').addClass('d-none');    
+    }
+    else {
+        $('[subscriptionUrl][href]').attr('href', config.subscriptionUrl);
+    }
 
     //Set Location
     var location = config.location;

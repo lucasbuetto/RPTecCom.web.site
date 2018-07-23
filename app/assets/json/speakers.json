@@ -1,9 +1,9 @@
 [
     {
         "animate": "animate-in-left",
-        "image": "assets/images/palestrantes/antonio_clessio.jpg",
-        "name": "Antônio Cléssio",
-        "theme": "Angular com Redux"
+        "image": "assets/images/palestrantes/default.png",
+        "name": "Murilo Neandro",
+        "theme": "Alta Performance em Angular 6"
     },
     {
         "animate": "animate-in-down",
