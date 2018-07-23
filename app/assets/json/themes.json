@@ -12,7 +12,7 @@
     {
         "icon": "fas fa-align-left",
         "theme": "Gerenciamento de Filas (Queue) com RabbitMQ",
-        "description": "Diego Teixeira , analista de sistemas, vai falar sobre sua experiência com filas  e o RabbitMQ, comentando o funcionamento e demonstrando algumas aplicações."
+        "description": "Diego Teixeira , analista de sistemas, vai falar sobre sua experiência com filas e o RabbitMQ, comentando o funcionamento e demonstrando algumas aplicações."
     },
     {
         "icon": "fas fa-sync",
@@ -22,6 +22,6 @@
     {
         "icon": "fas fa-magic",
         "theme": "Testes de unidade automatizados",
-        "description": "Felipe Muniz e Igor Rozani, analistas de sistemas, vão falar sobre sua experiência com testes de unidade, comentando as vantagens, dificuldades e os ganhos de qualidade ao se utilizar."
+        "description": "Felipe Muniz e Igor Rozani, analistas de sistemas, irão falar sobre sua experiência com testes de unidade, comentando as vantagens, dificuldades e os ganhos de qualidade ao se utilizar."
     }
 ]
