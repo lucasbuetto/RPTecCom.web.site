@@ -1,7 +1,7 @@
 [
     {
         "animate": "animate-in-left",
-        "image": "assets/images/palestrantes/default.png",
+        "image": "assets/images/palestrantes/murilo_neandro.jpg",
         "name": "Murilo Neandro",
         "theme": "Alta performance em Angular 6"
     },
