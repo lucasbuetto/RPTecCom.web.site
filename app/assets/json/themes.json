@@ -1,26 +1,31 @@
 [
     {
         "icon": "fab fa-angular",
+        "color": "angular",
         "theme": "Alta Performance em Angular 6",
-        "description": "Murilo Neandro, ...."
+        "description": "Murilo Neandro, arquiteto de software, vai falar sobre boas práticas para trabalhar com o Angular 6 em alta performance, demonstrando algumas aplicações."
     },
     {
         "icon": "fab fa-searchengin",
+        "color": "eng-software",
         "theme": "Qualidade e Engenharia de Software",
         "description": "Gustavo Bernardes, analista de qualidade de software, falará sobre qualidade, muito além dos testes, dentro dos projetos de software."
     },
     {
         "icon": "fas fa-align-left",
+        "color": "rabbit-mq",
         "theme": "Gerenciamento de Filas (Queue) com RabbitMQ",
         "description": "Diego Teixeira , analista de sistemas, vai falar sobre sua experiência com filas e o RabbitMQ, comentando o funcionamento e demonstrando algumas aplicações."
     },
     {
         "icon": "fas fa-sync",
+        "color": "scrum",
         "theme": "Scrum e Kanban",
         "description": "Matheus Calache, Arquiteto de Software e Líder de Desenvolvimento. Scrum e Kanban Board, uma forma simples, eficiente e eficaz de se utilizá-los."
     },
     {
         "icon": "fas fa-magic",
+        "color": "testes-auto",
         "theme": "Testes de unidade automatizados",
         "description": "Felipe Muniz e Igor Rozani, analistas de sistemas, irão falar sobre sua experiência com testes de unidade, comentando as vantagens, dificuldades e os ganhos de qualidade ao se utilizar."
     }

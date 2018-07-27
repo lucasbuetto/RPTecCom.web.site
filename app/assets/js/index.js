@@ -59,17 +59,28 @@ function themesList(jsonList) {
         var item = jsonList[i];
         var template = `
             <div class="col-md-4 my-3">
-                <div class="row mb-3">
-                    <div class="text-center col-2">
-                        <i class="d-block mx-auto fa-3x ${item.icon}"></i>
-                    </div>
-                    <div class="align-self-center col-10">
-                        <h3 class="ml-1">
-                            <b>${item.theme}</b>
-                        </h3>
+                <div class="card-deck">
+                    <div class="card themes">
+                        <div class="card-body">
+                            
+                            <div class="row mb-3 icon-area">
+                                <div class="text-center col">
+                                    <i class="d-block mx-auto fa-7x ${item.icon}" color="${item.color}"></i>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="align-self-center col-10">
+                                    <h3 class="ml-1 card-title">
+                                        <b>${item.theme}</b>
+                                    </h3>
+                                </div>
+                            </div>
+                            <p class="card-text">${item.description}</p>
+
+                        </div>
                     </div>
                 </div>
-                <p>${item.description}</p>
             </div>
         `;
         $('#themesList').append(template);
@@ -103,6 +114,12 @@ function configuration(config) {
     //Set Event informations
     $('[eventDate]').text(config.eventDate);
     $('[eventPeriod]').text(config.eventPeriod);
+    $('[eventText]').text(config.eventText);
+    $('[eventDescription]').text(config.eventDescription);
+
+    $('[eventlinkedin][href]').attr('href', config.eventlinkedin);
+    $('[eventfacebook][href]').attr('href', config.eventfacebook);
+
     if(config.subscriptionUrl == null || config.subscriptionUrl == "" | config.subscriptionUrl == undefined) {
         $('[subscriptionUrl]').addClass('d-none');    
     }
@@ -115,33 +132,40 @@ function configuration(config) {
     var locationTemplate = `
         <div class="container">
             <div class="row">
-                <div class="col-md-6 text-center align-self-center">
-                <p class="mb-5 text-bold text-dark">
-                    <strong class="text-center text-uppercase">LOCALIZAÇÃO</strong>
-                    <br><a href="${location.website}" target="_blank"><img src="${location.imageSrc}" alt="${location.name}"></a>
-                    <br>${location.street}
-                    <br>${location.district}
-                    <br>${location.phone}</p>
-                <div class="my-3 row">
-                    <div class="col-4 ${location.facebook == "" ? 'd-none' : ''}">
-                    <a href="${location.facebook}" target="_blank">
-                        <i class="fab fa-3x fa-facebook"></i>
-                    </a>
-                    </div>
-                    <div class="col-4 ${location.twitter == "" ? 'd-none' : ''}">
-                    <a href="${location.twitter}" target="_blank">
-                        <i class="fab fa-3x fa-twitter"></i>
-                    </a>
-                    </div>
-                    <div class="col-4 ${location.instagram == "" ? 'd-none' : ''}">
-                    <a href="${location.instagram}" target="_blank">
-                        <i class="fab fa-3x fa-instagram"></i>
-                    </a>
+                <div class="col-md-6 text-center align-self-center ${location.name == '' ? 'd-none' : ''}">
+                    <p class="mb-5 text-bold text-dark">
+                        <strong class="text-center text-uppercase">LOCALIZAÇÃO</strong>
+                        <br><a href="${location.website}" target="_blank"><img src="${location.imageSrc}" alt="${location.name}"></a>
+                        <br>${location.street}
+                        <br>${location.district}
+                        <br>${location.phone}</p>
+                    <div class="my-3 row">
+                        <div class="col-4 ${location.facebook == "" ? 'd-none' : ''}">
+                        <a href="${location.facebook}" target="_blank">
+                            <i class="fab fa-3x fa-facebook"></i>
+                        </a>
+                        </div>
+                        <div class="col-4 ${location.twitter == "" ? 'd-none' : ''}">
+                        <a href="${location.twitter}" target="_blank">
+                            <i class="fab fa-3x fa-twitter"></i>
+                        </a>
+                        </div>
+                        <div class="col-4 ${location.instagram == "" ? 'd-none' : ''}">
+                        <a href="${location.instagram}" target="_blank">
+                            <i class="fab fa-3x fa-instagram"></i>
+                        </a>
+                        </div>
                     </div>
                 </div>
+                <div class="col-md-6 p-0 ${location.name == '' ? 'd-none' : ''}"">
+                    <iframe src="${location.googleMapsEmbedUrl}" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
-                <div class="col-md-6 p-0">
-                <iframe src="${location.googleMapsEmbedUrl}" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                <div class="col-md-6 text-center align-self-center ${location.name != '' ? 'd-none' : ''}">
+                    <p class="mb-5 text-bold text-dark">
+                        <strong class="text-center text-uppercase">LOCALIZAÇÃO</strong>
+                        <br>
+                        A Definir
                 </div>
             </div>
         </div>

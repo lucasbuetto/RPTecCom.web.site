@@ -1,22 +1,25 @@
 {
     "name": "RP Tec Com",
     "year": "2018",
-    "eventDate": "Em Breve",
-    "eventPeriod": "",
+    "eventDate": "18/08/2018",
+    "eventPeriod": "08:00 às 13:00",
+    "eventText": "Está para acontecer a segunda edição do RP Tec Com, que irá apresentar novamente assuntos interessantes para a nossa comunidade de TI.",
+    "eventDescription": "Nosso objetivo é promover encontros, eventos, networking e capacitações de Tecnologia na Região Metropolitana de Ribeirão Preto.",
     "subscriptionUrl": "",
-    "facebook": "",
-    "twitter": "",
-    "Instagram": "",
+    "eventlinkedin": "https://www.linkedin.com/company/rp-tec-com/",
+    "eventfacebook": "https://www.facebook.com/rpteccom/",
+    "eventtwitter": "",
+    "eventInstagram": "",
     "location": {
-        "name": "Faculdade Reges",
-        "imageSrc": "assets/images/apoio/logo-reges.jpg",
-        "street": "R. Dr. Benjamin Anderson Stauffer, 801",
-        "district": "Jardim Botânico, Ribeirão Preto - SP",
-        "phone": "(16) 2138-1868",
-        "website": "http://reges.com.br/ribeiraopreto/",
+        "name": "",
+        "imageSrc": "",
+        "street": "",
+        "district": "",
+        "phone": "",
+        "website": "",
         "facebook": "",
         "twitter": "",
         "instagram": "",
-        "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.5655963524136!2d-47.79803168449524!3d-21.209408984840454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9b8abe0537cc1%3A0x443a578977e7e330!2sFaculdade+REGES+de+Ribeir%C3%A3o+Preto!5e0!3m2!1spt-BR!2sbr!4v1531923958263"
+        "googleMapsEmbedUrl": ""
     }
 }

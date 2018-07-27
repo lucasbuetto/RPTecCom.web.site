@@ -20,7 +20,9 @@ $theme-colors: (
   info: #00DB99,
   success: #28a745,
   warning: #ffc107,
-  danger: #dc3545
+  danger: #dc3545,
+  angular: #DD0031,
+  scrum: #ff9800
 );
 
 $body-bg: white;
@@ -91,6 +93,10 @@ p {
   overflow: auto;
 }
 
+.card-deck {
+  height: 100%;
+}
+
 .card {
 
   @media(max-width: 768px) {
@@ -121,6 +127,22 @@ p {
     }
     .card-header {
       background-color: rgba(white, 0.8);
+    }
+
+    &.themes {
+
+      .icon-area {
+        background: map-get($theme-colors, 'primary');
+        color: map-get($theme-colors, 'light');
+        margin: -20px -20px 0 -20px;
+        padding: 30px 0;
+
+        i[color="angular"] { color: map-get($theme-colors, 'angular') }
+        i[color="eng-software"] { color: map-get($theme-colors, 'secondary') }
+        i[color="rabbit-mq"] { color: map-get($theme-colors, 'info') }
+        i[color="scrum"] { color: map-get($theme-colors, 'scrum') }
+        i[color="testes-auto"] { color: map-get($theme-colors, 'light') }
+      }
     }
   } 
 
@@ -247,6 +269,17 @@ h1.display-4 {
   }
 
   &.navbar-dark {
+
+    .navbar-brand {
+
+      @media (max-width: 767px) {
+        flex: 1 1 auto;
+      }
+    }
+
+    ul.navbar-toggler {
+      border: none;
+    }
     
     .navbar-nav {
       
@@ -260,9 +293,16 @@ h1.display-4 {
         @media (max-width: 768px) {
           padding: 10px;
         }
+
       }
       
       .nav-item {
+        
+        &.social-icon {
+          @media (max-width: 768px) {
+            display: none;
+          } 
+        }
 
         .nav-link {
 
@@ -273,6 +313,10 @@ h1.display-4 {
         }
       }
     }
+  }
+
+  ul.navbar-toggler-right {
+    flex-direction: row;
   }
 }
 

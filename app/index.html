@@ -66,9 +66,24 @@
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="assets/images/logo/logo-white-header.svg" alt="RP Tec Com" width="" height="40"> </a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        
+        <ul class="navbar-nav navbar-toggler navbar-toggler-right">
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#" eventlinkedin>
+                <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+            </li>
+            <li class="nav-item mx-1">
+                <a class="nav-link" href="#" eventfacebook>
+                  <i class="fab fa-facebook fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+        
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
       <div class="collapse navbar-collapse justify-content-center" id="navbar2SupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item mx-1 active">
@@ -92,6 +107,17 @@
           <li class="nav-item mx-1">
             <a class="nav-link" href="#contact">Contato</a>
           </li>
+
+          <li class="nav-item mx-1 social-icon">
+            <a class="nav-link" href="#" eventlinkedin>
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+          </li>
+          <li class="nav-item mx-1 social-icon">
+              <a class="nav-link" href="#" eventfacebook>
+                <i class="fab fa-facebook fa-2x"></i>
+              </a>
+          </li>
         </ul>
         <a subscriptionUrl class="btn btn-outline-light navbar-btn mx-1" href="" target="_blank">INSCRIÇÃO</a>
       </div>
@@ -113,7 +139,7 @@
             </h1>
             <h1 class="mt-1 display-4 shadowed-text" eventPeriod></h1>
             <p class="shadowed-text">Ribeirão Preto, SP</p>
-            <p class="shadowed-text">No nosso primeiro encontro da RP Tec Com, iremos trazer para a nossa comunidade de TI alguns assuntos muito interessantes.</p>
+            <p class="shadowed-text" eventText></p>
 
             <a subscriptionUrl href="#themes" target="_blank" class="btn btn-lg m-2 btn-info">VEJA NOSSOS TEMAS</a>
             <a subscriptionUrl href="" target="_blank" class="btn btn-lg m-2 btn-light">INSCREVA-SE!</a>
@@ -131,7 +157,7 @@
         <div class="col-md-12">
           <div class="card p-5">
             <h1 class="mb-3 display-4 text-dark">COMUNIDADE TECNOLÓGICA DE RIBEIRÃO PRETO</h1>
-            <p class="text-dark">Nosso objetivo é promover encontros, eventos, networking e capacitações de Tecnologia na Região Metropolitana de Ribeirão Preto. </p>
+            <p class="text-dark" eventDescription></p>
             <a href="#schedule" class="btn btn-lg m-2 btn-secondary">Cronograma</a>
             <a subscriptionUrl class="btn btn-primary btn-lg m-2" href="#register">Inscreva-se</a>
           </div>
