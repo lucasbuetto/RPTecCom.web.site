@@ -11,15 +11,15 @@
     "eventtwitter": "",
     "eventInstagram": "",
     "location": {
-        "name": "",
-        "imageSrc": "",
-        "street": "",
-        "district": "",
-        "phone": "",
-        "website": "",
-        "facebook": "",
-        "twitter": "",
+        "name": "Liceu Albert Sabin",
+        "imageSrc": "assets/images/liceu_albert_sabin.jpg",
+        "street": "Av. Luís Eduardo de Toledo Prado, 2170, Vila do Golfe",
+        "district": "Ribeirão Preto - SP - Brasil",
+        "phone": "(16) 3602-5250",
+        "website": "http://www.liceuasabin.br/infantil/",
+        "facebook": "https://www.facebook.com/liceuasabin#!/liceuasabin",
+        "twitter": "https://twitter.com/liceuasabin",
         "instagram": "",
-        "googleMapsEmbedUrl": ""
+        "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.091899585081!2d-47.83588808468413!3d-21.228204085890702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9b944d7d34dfb%3A0xac90d2055b990395!2sAv.+Luiz+Eduardo+Toledo+Prado%2C+2170+-+Vila+do+Golfe%2C+Ribeir%C3%A3o+Preto+-+SP%2C+14027-250!5e0!3m2!1spt-BR!2sbr!4v1533691024073"
     }
 }
