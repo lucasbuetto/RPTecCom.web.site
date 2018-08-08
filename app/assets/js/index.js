@@ -140,17 +140,17 @@ function configuration(config) {
                         <br>${location.district}
                         <br>${location.phone}</p>
                     <div class="my-3 row">
-                        <div class="col-4 ${location.facebook == "" ? 'd-none' : ''}">
+                        <div class="col ${location.facebook == "" ? 'd-none' : ''}">
                         <a href="${location.facebook}" target="_blank">
                             <i class="fab fa-3x fa-facebook"></i>
                         </a>
                         </div>
-                        <div class="col-4 ${location.twitter == "" ? 'd-none' : ''}">
+                        <div class="col ${location.twitter == "" ? 'd-none' : ''}">
                         <a href="${location.twitter}" target="_blank">
                             <i class="fab fa-3x fa-twitter"></i>
                         </a>
                         </div>
-                        <div class="col-4 ${location.instagram == "" ? 'd-none' : ''}">
+                        <div class="col ${location.instagram == "" ? 'd-none' : ''}">
                         <a href="${location.instagram}" target="_blank">
                             <i class="fab fa-3x fa-instagram"></i>
                         </a>

@@ -274,11 +274,24 @@ h1.display-4 {
 
       @media (max-width: 767px) {
         flex: 1 1 auto;
+        margin-right: 0;
+        
+        img {
+          height: 36px;
+        }
       }
+
     }
 
-    ul.navbar-toggler {
+    .navbar-toggler {
       border: none;
+      color: #fff;
+      padding: 0.55rem .25rem;
+
+      .navbar-toggler-icon {
+        width: 1.2em;
+        height: 1.2em;
+      }
     }
     
     .navbar-nav {
@@ -292,8 +305,17 @@ h1.display-4 {
 
         @media (max-width: 768px) {
           padding: 10px;
+          padding: 8px;
         }
 
+      }
+
+      .social-icon-sm {
+        @media (max-width: 768px) {
+          a {
+            font-size: 9px;
+          }
+        }
       }
       
       .nav-item {
@@ -317,6 +339,7 @@ h1.display-4 {
 
   ul.navbar-toggler-right {
     flex-direction: row;
+    padding: .25rem;
   }
 }
 
