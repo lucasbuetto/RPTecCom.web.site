@@ -1,12 +1,32 @@
 [
     {
-        "name": "MAG IT",
-        "url": "http://www.mag-it.com.br/",
-        "srcImage": "assets/images/apoio/logo-magit2.jpg"
+        "name": "Barão de Mauá",
+        "url": "http://www.baraodemaua.br/",
+        "srcImage": "assets/images/apoio/logo_barao_vertical.jpg",
+        "class": "gold"
     },
     {
-        "name": "SwordMaster",
+        "name": "MAG IT",
+        "url": "http://www.mag-it.com.br/",
+        "srcImage": "assets/images/apoio/logo-magit2.jpg",
+        "class": "gold"
+    },
+    {
+        "name": "Swordmaster",
         "url": "http://swordmaster.com.br/",
-        "srcImage": "assets/images/apoio/logo_swordmaster_vertical.jpg"
+        "srcImage": "assets/images/apoio/logo_swordmaster_vertical.jpg",
+        "class": "gold"
+    },
+    {
+        "name": "CSoftware",
+        "url": "https://www.csoftware.com.br/",
+        "srcImage": "assets/images/apoio/logo_csoftware.jpg",
+        "class": "silver"
+    },
+    {
+        "name": "VA Control & Performance",
+        "url": "https://vacp.com.br/",
+        "srcImage": "assets/images/apoio/logo_vacp.jpg",
+        "class": "bronze"
     }
 ]

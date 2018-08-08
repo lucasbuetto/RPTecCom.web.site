@@ -41,16 +41,25 @@ function scheduleList(jsonList) {
 }
 
 function sponsorsList(jsonList) {
+    var template = "";
     for (var i = 0; i < jsonList.length; i++) {
         var item = jsonList[i];
-        var template = `
+        template = `
             <div class="p-2">
                 <a href="${item.url}" target="_blank">
                     <img class="center-block img-fluid d-block" src="${item.srcImage}" alt="${item.name}"> 
                 </a>
             </div>
         `;
-        $('#sponsorsList').append(template);
+        if(item.class == "gold") {
+            $('#sponsorsList-gold').append(template);
+        }
+        else if(item.class == "silver") {
+            $('#sponsorsList-silver').append(template);
+        }
+        else {
+            $('#sponsorsList-bronze').append(template);
+        }
     };
 }
 
