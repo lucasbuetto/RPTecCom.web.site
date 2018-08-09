@@ -6,6 +6,12 @@
         "class": "gold"
     },
     {
+        "name": "Center Cursos",
+        "url": "http://www.centercursos.com.br",
+        "srcImage": "assets/images/apoio/logo_center_cursos.jpg",
+        "class": "gold"
+    },
+    {
         "name": "MAG IT",
         "url": "http://www.mag-it.com.br/",
         "srcImage": "assets/images/apoio/logo-magit2.jpg",
