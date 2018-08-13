@@ -380,9 +380,29 @@ h1.display-4 {
   }
 }
 
-#sponsorsList {
+#sponsorsList-gold {
+  // background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+  //             radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
 
   img {
-    min-width: 210px;
+    min-width: 300px;
+  }
+}
+
+#sponsorsList-silver {
+  // background: radial-gradient(ellipse farthest-corner at right bottom, #d4d4d4 0%, #a9a9a9 8%, #717171 30%, #656565 40%, transparent 80%), 
+  //             radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #eaeae9 8%, #bdbdbd 25%, #6b6b6b 62.5%, #505050 100%);
+
+  img {
+    min-width: 230px;
+  }
+}
+
+#sponsorsList-bronze {
+  // background: radial-gradient(ellipse farthest-corner at right bottom, #ffcbac 0%, #d18764 8%, #9f4f28 30%, #8a4c2f 40%, transparent 80%), 
+  //             radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #ffcbac 8%, #d18764 25%, #5d2a1f 62.5%, #5d251f 100%);
+
+  img {
+    min-width: 180px;
   }
 }

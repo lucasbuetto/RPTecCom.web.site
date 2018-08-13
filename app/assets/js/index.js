@@ -45,7 +45,7 @@ function sponsorsList(jsonList) {
     for (var i = 0; i < jsonList.length; i++) {
         var item = jsonList[i];
         template = `
-            <div class="p-2">
+            <div class="p-2 m-2 img-thumbnail">
                 <a href="${item.url}" target="_blank">
                     <img class="center-block img-fluid d-block" src="${item.srcImage}" alt="${item.name}"> 
                 </a>
@@ -115,7 +115,6 @@ function speakersList(jsonList) {
 }
 
 function configuration(config) {
-    console.log(config);
 
     //Set site title
     $('title').text(config.name + ' ' + config.year);
@@ -185,11 +184,11 @@ function configuration(config) {
 
 $(function () {
 
-    getComponent('GET', 'assets/json/config.json', 'json', null, configuration);
-    getComponent('GET', 'assets/json/schedule.json', 'json', null, scheduleList);
-    getComponent('GET', 'assets/json/sponsors.json', 'json', null, sponsorsList);
-    getComponent('GET', 'assets/json/themes.json', 'json', null, themesList);
-    getComponent('GET', 'assets/json/speakers.json', 'json', null, speakersList);
+    getComponent('GET', 'assets/json/config.json?v=2.0.10', 'json', null, configuration);
+    getComponent('GET', 'assets/json/schedule.json?v=2.0.10', 'json', null, scheduleList);
+    getComponent('GET', 'assets/json/sponsors.json?v=2.0.10', 'json', null, sponsorsList);
+    getComponent('GET', 'assets/json/themes.json?v=2.0.10', 'json', null, themesList);
+    getComponent('GET', 'assets/json/speakers.json?v=2.0.10', 'json', null, speakersList);
 
     $('.navbar-collapse a').click(function (e) {
         if(window.outerWidth < 768) {
