@@ -12,6 +12,12 @@
         "class": "gold"
     },
     {
+        "name": "SWFast",
+        "url": "http://swfast.com.br/",
+        "srcImage": "assets/images/apoio/logo_swfast.jpg",
+        "class": "gold"
+    },
+    {
         "name": "MAG IT",
         "url": "http://www.mag-it.com.br/",
         "srcImage": "assets/images/apoio/logo-magit2.jpg",
@@ -28,6 +34,12 @@
         "url": "https://www.csoftware.com.br/",
         "srcImage": "assets/images/apoio/logo_csoftware.jpg",
         "class": "silver"
+    },
+    {
+        "name": "Projetos e TI",
+        "url": "https://projetoseti.com.br/",
+        "srcImage": "assets/images/apoio/logo_projetoseti.jpg",
+        "class": "bronze"
     },
     {
         "name": "VA Control & Performance",
