@@ -18,6 +18,12 @@
         "class": "gold"
     },
     {
+        "name": "Acerta gráfica digital",
+        "url": "http://acertagraficadigital.com.br/",
+        "srcImage": "assets/images/apoio/logo_acertagraficadigital.jpg",
+        "class": "gold"
+    },
+    {
         "name": "MAG IT",
         "url": "http://www.mag-it.com.br/",
         "srcImage": "assets/images/apoio/logo-magit2.jpg",
@@ -33,6 +39,12 @@
         "name": "CSoftware",
         "url": "https://www.csoftware.com.br/",
         "srcImage": "assets/images/apoio/logo_csoftware.jpg",
+        "class": "silver"
+    },
+    {
+        "name": "Piso Pólo industrial de software",
+        "url": "http://piso.org.br/",
+        "srcImage": "assets/images/apoio/logo_piso.jpg",
         "class": "silver"
     },
     {
