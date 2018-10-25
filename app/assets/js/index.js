@@ -46,7 +46,7 @@ function sponsorsList(jsonList) {
         var item = jsonList[i];
         template = `
             <div class="p-2 m-2 img-thumbnail">
-                <a href="${item.url}" target="_blank">
+                <a href="${item.url}" target="_blank" rel="dofollow" title="${item.name}">
                     <img class="center-block img-fluid d-block" src="${item.srcImage}" alt="${item.name}"> 
                 </a>
             </div>
