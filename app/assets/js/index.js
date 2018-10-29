@@ -186,7 +186,7 @@ $(function () {
 
     getComponent('GET', 'assets/json/config.json?v=2.0.10', 'json', null, configuration);
     getComponent('GET', 'assets/json/schedule.json?v=2.0.10', 'json', null, scheduleList);
-    getComponent('GET', 'assets/json/sponsors.json?v=2.0.10', 'json', null, sponsorsList);
+    // getComponent('GET', 'assets/json/sponsors.json?v=2.0.10', 'json', null, sponsorsList);
     getComponent('GET', 'assets/json/themes.json?v=2.0.10', 'json', null, themesList);
     getComponent('GET', 'assets/json/speakers.json?v=2.0.10', 'json', null, speakersList);
 

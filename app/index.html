@@ -2,309 +2,405 @@
 <html>
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122406113-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122406113-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'UA-122406113-1');
-  </script>
+        gtag('config', 'UA-122406113-1');
+    </script>
 
-  <!-- PAGE settings -->
-  <title>RP Tec Com</title>
-  <meta charset="utf-8">
-  <meta name="description" lang="pt-br" content="Nosso objetivo &eacute; promover encontros, eventos, networking e capacita&ccedil;&otilde;es de Tecnologia na Regi&atilde;o Metropolitana de Ribeir&atilde;o Preto." />
-  <meta name="keywords" lang="pt-br" content="rp tec com, conferência de tecnologia de TI, eventos de tecnologia, convenções de tecnologia" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="RP Tec Com" />
+    <!-- PAGE settings -->
+    <title>RP Tec Com</title>
+    <meta charset="utf-8">
+    <meta name="description" lang="pt-br" content="Nosso objetivo &eacute; promover encontros, eventos, networking e capacita&ccedil;&otilde;es de Tecnologia na Regi&atilde;o Metropolitana de Ribeir&atilde;o Preto." />
+    <meta name="keywords" lang="pt-br" content="rp tec com, conferência de tecnologia de TI, eventos de tecnologia, convenções de tecnologia" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="RP Tec Com" />
 
-  <!-- Facebook metatags -->
-  <meta property="og:title" content="RP Tec Com 2018 | #RPTecCom" />
-  <meta property="og:description" content="Nosso objetivo &eacute; promover encontros, eventos, networking e capacita&ccedil;&otilde;es de Tecnologia na Regi&atilde;o Metropolitana de Ribeir&atilde;o Preto." />
-  <meta property="og:url" content="http://rpteccom.com/2018/index.html" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="RP Tec Com 2018" />
-  <meta property="og:image" content="http://localhost:3000/assets/images/logo/logo-color-slogan-white.svg" />
-  <meta property="og:image:type" content="image/svg">
-  <meta property="og:image:width" content="690">
-  <meta property="og:image:height" content="162">
-  <meta property="article:author" content="https://www.facebook.com/rpteccom/" />
-  <meta property="article:publisher" content="https://www.facebook.com/rpteccom/" />
+    <!-- Facebook metatags -->
+    <meta property="og:title" content="RP Tec Com 2018 | #RPTecCom" />
+    <meta property="og:description" content="Nosso objetivo &eacute; promover encontros, eventos, networking e capacita&ccedil;&otilde;es de Tecnologia na Regi&atilde;o Metropolitana de Ribeir&atilde;o Preto." />
+    <meta property="og:url" content="http://rpteccom.com/2018/index.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="RP Tec Com 2018" />
+    <meta property="og:image" content="http://localhost:3000/assets/images/logo/logo-color-slogan-white.svg" />
+    <meta property="og:image:type" content="image/svg">
+    <meta property="og:image:width" content="690">
+    <meta property="og:image:height" content="162">
+    <meta property="article:author" content="https://www.facebook.com/rpteccom/" />
+    <meta property="article:publisher" content="https://www.facebook.com/rpteccom/" />
 
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-  <link rel="manifest" href="assets/favicon/site.webmanifest">
-  <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="assets/favicon/favicon.ico">
-  <meta name="apple-mobile-web-app-title" content="RP Tec Com">
-  <meta name="application-name" content="RP Tec Com">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
-  <meta name="theme-color" content="#1976d2">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="RP Tec Com">
+    <meta name="application-name" content="RP Tec Com">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#1976d2">
 
-  <!-- CSS dependencies -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"> -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/theme.css">
+    <!-- CSS dependencies -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/theme.css">
 
-  <!-- Script: Make my navbar transparent when the document is scrolled to top -->
-  <script src="assets/js/navbar-ontop.js"></script>
-  <!-- Script: Animated entrance -->
-  <script src="assets/js/animate-in.js"></script>
+    <!-- Script: Make my navbar transparent when the document is scrolled to top -->
+    <script src="assets/js/navbar-ontop.js"></script>
+    <!-- Script: Animated entrance -->
+    <script src="assets/js/animate-in.js"></script>
 </head>
 
 <body data-spy="scroll" data-target="#navbar2SupportedContent">
-  
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-primary">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="assets/images/logo/logo-white-header.svg" alt="RP Tec Com" width="" height="40"> </a>
-        
-        <ul class="navbar-nav navbar-toggler navbar-toggler-right">
-            <li class="nav-item mx-1 social-icon-sm">
-              <a class="nav-link" href="#" eventlinkedin>
-                <i class="fab fa-linkedin fa-2x"></i>
-              </a>
-            </li>
-            <li class="nav-item mx-1 social-icon-sm">
-                <a class="nav-link" href="#" eventfacebook>
-                  <i class="fab fa-facebook fa-2x"></i>
-                </a>
-            </li>
-        </ul>
-        
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
-      <div class="collapse navbar-collapse justify-content-center" id="navbar2SupportedContent">
-        <ul class="navbar-nav align-items-md-center">
-          <li class="nav-item mx-1 active">
-            <a class="nav-link" href="#meeting">Encontro</a>
-          </li>
-          <li class="nav-item mx-1">
-            <a class="nav-link" href="#themes">Temas</a>
-          </li>
-          <li class="nav-item mx-1">
-            <a class="nav-link" href="#speakers">Palestrantes</a>
-          </li>
-          <li class="nav-item mx-1">
-            <a class="nav-link" href="#schedule">Cronograma</a>
-          </li>
-          <li class="nav-item mx-1">
-            <a class="nav-link" href="#sponsors">Apoio</a>
-          </li>
-          <li class="nav-item mx-1">
-            <a class="nav-link" href="#location">Localização</a>
-          </li>
-          <li class="nav-item mx-1">
-            <a class="nav-link" href="#contact">Contato</a>
-          </li>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo/logo-white-header.svg" alt="RP Tec Com" width="" height="40"> </a>
 
-          <li class="nav-item mx-1 social-icon">
-            <a class="nav-link" href="#" eventlinkedin>
-              <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-          </li>
-          <li class="nav-item mx-1 social-icon">
-              <a class="nav-link" href="#" eventfacebook>
-                <i class="fab fa-facebook fa-2x"></i>
-              </a>
-          </li>
-        </ul>
-        <a subscriptionUrl class="btn btn-outline-light navbar-btn mx-1" href="" target="_blank">INSCRIÇÃO</a>
-      </div>
-    </div>
-  </nav>
-  
-  <!-- Cover -->
-  <div class="d-flex align-items-center cover front-page bg-dark" id="meeting">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 offset-lg-2 text-white text-center">
-          <div class="card transparency-0">
-            
-            <img class="img-title img-fluid d-block" src="assets/images/logo/logo-color-slogan-white.svg">
-            <h1 class="mt-1 display-4 shadowed-text">
-              Nosso segundo encontro
-              <br>
-              <span eventDate></span>
-            </h1>
-            <h1 class="mt-1 display-4 shadowed-text" eventPeriod></h1>
-            <p class="shadowed-text">Ribeirão Preto, SP</p>
-            <p class="shadowed-text" eventText></p>
+            <ul class="navbar-nav navbar-toggler navbar-toggler-right">
+                <li class="nav-item mx-1 social-icon-sm">
+                    <a class="nav-link" href="#" eventlinkedin>
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                </li>
+                <li class="nav-item mx-1 social-icon-sm">
+                    <a class="nav-link" href="#" eventfacebook>
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                </li>
+            </ul>
 
-            <a href="#themes" target="_blank" class="btn btn-lg m-2 btn-info">VEJA NOSSOS TEMAS</a>
-            <a subscriptionUrl href="" target="_blank" class="btn btn-lg m-2 btn-light">INSCREVA-SE!</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent"
+                aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Info background -->
-  <div class="py-6 text-center section-info section-primary" style="background-image: url('assets/images/section_1.jpg');" id="encontro">
-    <div class="container p-2">
-      <div class="row mx-auto">
-        <div class="col-md-12">
-          <div class="card p-5">
-            <h1 class="mb-3 display-4 text-dark">COMUNIDADE TECNOLÓGICA DE RIBEIRÃO PRETO</h1>
-            <p class="text-dark" eventDescription></p>
-            <a href="#schedule" class="btn btn-lg m-2 btn-secondary">Cronograma</a>
-            <a subscriptionUrl class="btn btn-primary btn-lg m-2" href="#register">Inscreva-se</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Themes -->
-  <div class="py-6 bg-light" id="themes">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-12">
-          <h1 class="mb-4">Temas do segundo encontro</h1>
-          <div id="themesList" class="row text-left mt-5"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Speakers -->
-  <div class="py-6 text-center" id="speakers">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1>Palestrantes</h1>
-        </div>
-      </div>
-      <div id="speakersList" class="row"></div>
-    </div>
-  </div>
-  
-  <!-- Schedule -->
-  <div class="py-6 section-secondary" id="schedule" style="background-image: url('assets/images/cronograma.jpg');">
-    <div class="container">
-      <div class="row text-left">
-        <div class="p-4 col-lg-12 animate-in-right">
-          <div class="card text-dark">
-            <div class="card-block text-center p-2">
-              <h2>Cronograma</h2>
-              <div class="scroll">
-                <table id="scheduleList" class="table table-striped table-sm">
-                  <thead class="thead-dark">
-                      <tr>
-                          <th scope="col">Horário</th>
-                          <th scope="col">Tema</th>
-                          <th scope="col">Palestrante</th>
-                          <th scope="col">Trilha</th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                  </tbody>
-                </table>
-              </div>
+            <div class="collapse navbar-collapse justify-content-center" id="navbar2SupportedContent">
+                <ul class="navbar-nav align-items-md-center">
+                    <li class="nav-item mx-1 active">
+                        <a class="nav-link" href="#meeting">Encontro</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="#themes">Temas</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="#speakers">Palestrantes</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="#schedule">Cronograma</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="#sponsors">Apoio</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="#location">Localização</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+
+                    <li class="nav-item mx-1 social-icon">
+                        <a class="nav-link" href="#" eventlinkedin>
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-1 social-icon">
+                        <a class="nav-link" href="#" eventfacebook>
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+                <a subscriptionUrl class="btn btn-outline-light navbar-btn mx-1" href="" target="_blank">INSCRIÇÃO</a>
             </div>
-            <!-- <ul id="scheduleList" class="list-group list-group-flush"></ul> -->
-          </div>
         </div>
-      </div>
+    </nav>
+
+    <!-- Cover -->
+    <div class="d-flex align-items-center cover front-page bg-dark" id="meeting">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 text-white text-center">
+                    <div class="card transparency-0">
+
+                        <img class="img-title img-fluid d-block" src="assets/images/logo/logo-color-slogan-white.svg">
+                        <h1 class="mt-1 display-4 shadowed-text">
+                            Nosso segundo encontro
+                            <br>
+                            <span eventDate></span>
+                        </h1>
+                        <h1 class="mt-1 display-4 shadowed-text" eventPeriod></h1>
+                        <p class="shadowed-text">Ribeirão Preto, SP</p>
+                        <p class="shadowed-text" eventText></p>
+
+                        <a href="#themes" target="_blank" class="btn btn-lg m-2 btn-info">VEJA NOSSOS TEMAS</a>
+                        <a subscriptionUrl href="" target="_blank" class="btn btn-lg m-2 btn-light">INSCREVA-SE!</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  
-  <!-- Sponsor logos -->
-  <div class="py-6 section bg-light text-center" id="sponsors">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="mb-4">Quem está nos apoiando</h1>
+
+    <!-- Info background -->
+    <div class="py-6 text-center section-info section-primary" style="background-image: url('assets/images/section_1.jpg');"
+        id="encontro">
+        <div class="container p-2">
+            <div class="row mx-auto">
+                <div class="col-md-12">
+                    <div class="card p-5">
+                        <h1 class="mb-3 display-4 text-dark">COMUNIDADE TECNOLÓGICA DE RIBEIRÃO PRETO</h1>
+                        <p class="text-dark" eventDescription></p>
+                        <a href="#schedule" class="btn btn-lg m-2 btn-secondary">Cronograma</a>
+                        <a subscriptionUrl class="btn btn-primary btn-lg m-2" href="#register">Inscreva-se</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div id="sponsorsList-gold" class="row d-flex flex-row justify-content-center mb-5"></div>
+    </div>
+
+    <!-- Themes -->
+    <div class="py-6 bg-light" id="themes">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h1 class="mb-4">Temas do segundo encontro</h1>
+                    <div id="themesList" class="row text-left mt-5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Speakers -->
+    <div class="py-6 text-center" id="speakers">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Palestrantes</h1>
+                </div>
+            </div>
+            <div id="speakersList" class="row"></div>
+        </div>
+    </div>
+
+    <!-- Schedule -->
+    <div class="py-6 section-secondary" id="schedule" style="background-image: url('assets/images/cronograma.jpg');">
+        <div class="container">
+            <div class="row text-left">
+                <div class="p-4 col-lg-12 animate-in-right">
+                    <div class="card text-dark">
+                        <div class="card-block text-center p-2">
+                            <h2>Cronograma</h2>
+                            <div class="scroll">
+                                <table id="scheduleList" class="table table-striped table-sm">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">Horário</th>
+                                            <th scope="col">Tema</th>
+                                            <th scope="col">Palestrante</th>
+                                            <th scope="col">Trilha</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- <ul id="scheduleList" class="list-group list-group-flush"></ul> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sponsor logos -->
+    <div class="py-6 section bg-light text-center" id="sponsors">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="mb-4">Quem está nos apoiando</h1>
+                </div>
+            </div>
+            <!-- <div id="sponsorsList-gold" class="row d-flex flex-row justify-content-center mb-5"></div>
       <div id="sponsorsList-silver" class="row d-flex flex-row justify-content-center mb-5"></div>
-      <div id="sponsorsList-bronze" class="row d-flex flex-row justify-content-center mb-3"></div>
-    </div>
-  </div>
-  
-  <!-- Call to action -->
-  <div subscriptionUrl class="py-6 section section-info" id="register" style="background-image: url('assets/images/inscrevase.jpg');">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 text-left">
-          <div class="card transparency-02">
-            <h1 class="m-3 text-white shadowed-text">As inscrições estão abertas</h1>
-            <p class="m-3 shadowed-text d-none">
-            </p>
-            <a subscriptionUrl href="#" class="btn btn-warning btn-lg m-3">Inscreva-se</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+      <div id="sponsorsList-bronze" class="row d-flex flex-row justify-content-center mb-3"></div> -->
+            <div id="sponsorsList-gold" class="row d-flex flex-row justify-content-center mb-5">
+                <div class="p-2 m-2 img-thumbnail">
+                    <a href="http://www.baraodemaua.br/" target="_blank" rel="dofollow" title="Barão de Mauá">
+                        <img class="center-block img-fluid d-block" src="assets/images/apoio/logo_barao_vertical.jpg"
+                            alt="Barão de Mauá">
+                    </a>
+                </div>
 
-  <!-- Location -->
-  <div class="py-6 text-white" id="location">
-  </div>
+                <div class="p-2 m-2 img-thumbnail">
+                    <a href="http://www.centercursos.com.br" target="_blank" rel="dofollow" title="Center Cursos">
+                        <img class="center-block img-fluid d-block" src="assets/images/apoio/logo_center_cursos.jpg"
+                            alt="Center Cursos">
+                    </a>
+                </div>
 
-  <!-- Contact/footer -->
-  <div class="py-6 text-white text-center bg-dark" id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1>Entre em contato com a gente</h1>
-          <p class="lead mb-4">Quer ser um colaborador?
-            <br>Ajudar na organização de encontros com a gente?&nbsp;
-            <br>Quer ser um palestrante?&nbsp;
-            <br>Quer expor sua empresa e divulgar seu negócio?&nbsp;
-            <br>Nos dê uma ligada ou nos mande um e-mail!</p>
-          <div id="c_row-2col-a" class="row pi-draggable">
-            <div class="col-md-6">
-              <i class="d-block fas fa-phone fa-3x"></i>
-              <table class="mx-auto">
-                  <tr>
-                    <td align="right"><p class="lead">Matheus:</p></td>
-                    <td><p class="lead"><a class="text-white" href="https://web.whatsapp.com/send?phone=+5516988480228&text=" target="_blank">(16) 98848-0228</a></p></td>
-                    <td><p class="lead"><i class="d-block ml-1 fab fa-whatsapp text-success"></p></i></td>
-                  </tr>
-                  <tr>
-                    <td align="right"><p class="lead">Murilo:</p></td>
-                    <td><p class="lead"><a class="text-white" href="https://web.whatsapp.com/send?phone=+5516991655609&text=" target="_blank">(16) 99165-5609</a></p></td>
-                    <td><p class="lead"><i class="d-block ml-1 fab fa-whatsapp text-success"></p></i></td>
-                  </tr>
-              </table>
+                <div class="p-2 m-2 img-thumbnail">
+                    <a href="http://swfast.com.br/" target="_blank" rel="dofollow" title="SWFast">
+                        <img class="center-block img-fluid d-block" src="assets/images/apoio/logo_swfast.jpg" alt="SWFast">
+                    </a>
+                </div>
+
+                <div class="p-2 m-2 img-thumbnail">
+                    <a href="http://acertagraficadigital.com.br/" target="_blank" rel="dofollow" title="Acerta gráfica digital">
+                        <img class="center-block img-fluid d-block" src="assets/images/apoio/logo_acertagraficadigital.jpg"
+                            alt="Acerta gráfica digital">
+                    </a>
+                </div>
+
+                <div class="p-2 m-2 img-thumbnail">
+                    <a href="http://www.mag-it.com.br/" target="_blank" rel="dofollow" title="MAG IT">
+                        <img class="center-block img-fluid d-block" src="assets/images/apoio/logo-magit2.jpg" alt="MAG IT">
+                    </a>
+                </div>
+
+                <div class="p-2 m-2 img-thumbnail">
+                    <a href="http://swordmaster.com.br/" target="_blank" rel="dofollow" title="Swordmaster">
+                        <img class="center-block img-fluid d-block" src="assets/images/apoio/logo_swordmaster_vertical.jpg"
+                            alt="Swordmaster">
+                    </a>
+                </div>
             </div>
-            <div class="col-md-6">
-              <i class="d-block far fa-envelope fa-3x"></i>
-              <p class="lead text-white">
-                <a href="mailto:matheus.calache@rpteccom.com" class="text-light"> matheus.calache@rpteccom.com </a>
-              </p>
-              <p class="lead text-white">
-                <a href="mailto:murilo.gomes@rpteccom.com" class="text-white"> murilo.gomes@rpteccom.com </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- JavaScript dependencies -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"></script>
-  
-  <!-- Script: Smooth scrolling between anchors in a same page -->
-  <script src="assets/js/smooth-scroll.js"></script>
+            <div id="sponsorsList-silver" class="row d-flex flex-row justify-content-center mb-5">
+                <div class="p-2 m-2 img-thumbnail">
+                    <a href="https://www.csoftware.com.br/" target="_blank" rel="dofollow" title="CSoftware">
+                        <img class="center-block img-fluid d-block" src="assets/images/apoio/logo_csoftware.jpg" alt="CSoftware">
+                    </a>
+                </div>
 
-  <script src="assets/js/index.js"></script>
+                <div class="p-2 m-2 img-thumbnail">
+                    <a href="http://piso.org.br/" target="_blank" rel="dofollow" title="Piso Pólo industrial de software">
+                        <img class="center-block img-fluid d-block" src="assets/images/apoio/logo_piso.jpg" alt="Piso Pólo industrial de software">
+                    </a>
+                </div>
+
+                <div class="p-2 m-2 img-thumbnail">
+                    <a href="https://br.jooble.org/vagas-de-emprego-analista-de-ti" target="_blank" rel="dofollow"
+                        title="Jooble™ One site - all jobs‎">
+                        <img class="center-block img-fluid d-block" src="assets/images/apoio/logo_jooble.jpg" alt="Jooble™ One site - all jobs‎">
+                        <span style="color: #3482bd; font-weight: bold; position: absolute; width: 100%; transform: translate(-50%); bottom: 0;">Vagas para Analistas de TI</span>
+                    </a>
+                </div>
+            </div>
+            <div id="sponsorsList-bronze" class="row d-flex flex-row justify-content-center mb-3">
+                <div class="p-2 m-2 img-thumbnail">
+                    <a href="https://projetoseti.com.br/" target="_blank" rel="dofollow" title="Projetos e TI">
+                        <img class="center-block img-fluid d-block" src="assets/images/apoio/logo_projetoseti.jpg" alt="Projetos e TI">
+                    </a>
+                </div>
+
+                <div class="p-2 m-2 img-thumbnail">
+                    <a href="https://vacp.com.br/" target="_blank" rel="dofollow" title="VA Control &amp; Performance">
+                        <img class="center-block img-fluid d-block" src="assets/images/apoio/logo_vacp.jpg" alt="VA Control &amp; Performance">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to action -->
+    <div subscriptionUrl class="py-6 section section-info" id="register" style="background-image: url('assets/images/inscrevase.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 text-left">
+                    <div class="card transparency-02">
+                        <h1 class="m-3 text-white shadowed-text">As inscrições estão abertas</h1>
+                        <p class="m-3 shadowed-text d-none">
+                        </p>
+                        <a subscriptionUrl href="#" class="btn btn-warning btn-lg m-3">Inscreva-se</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Location -->
+    <div class="py-6 text-white" id="location">
+    </div>
+
+    <!-- Contact/footer -->
+    <div class="py-6 text-white text-center bg-dark" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Entre em contato com a gente</h1>
+                    <p class="lead mb-4">Quer ser um colaborador?
+                        <br>Ajudar na organização de encontros com a gente?&nbsp;
+                        <br>Quer ser um palestrante?&nbsp;
+                        <br>Quer expor sua empresa e divulgar seu negócio?&nbsp;
+                        <br>Nos dê uma ligada ou nos mande um e-mail!</p>
+                    <div id="c_row-2col-a" class="row pi-draggable">
+                        <div class="col-md-6">
+                            <i class="d-block fas fa-phone fa-3x"></i>
+                            <table class="mx-auto">
+                                <tr>
+                                    <td align="right">
+                                        <p class="lead">Matheus:</p>
+                                    </td>
+                                    <td>
+                                        <p class="lead"><a class="text-white" href="https://web.whatsapp.com/send?phone=+5516988480228&text="
+                                                target="_blank">(16) 98848-0228</a></p>
+                                    </td>
+                                    <td>
+                                        <p class="lead"><i class="d-block ml-1 fab fa-whatsapp text-success"></p></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right">
+                                        <p class="lead">Murilo:</p>
+                                    </td>
+                                    <td>
+                                        <p class="lead"><a class="text-white" href="https://web.whatsapp.com/send?phone=+5516991655609&text="
+                                                target="_blank">(16) 99165-5609</a></p>
+                                    </td>
+                                    <td>
+                                        <p class="lead"><i class="d-block ml-1 fab fa-whatsapp text-success"></p></i>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-md-6">
+                            <i class="d-block far fa-envelope fa-3x"></i>
+                            <p class="lead text-white">
+                                <a href="mailto:matheus.calache@rpteccom.com" class="text-light">
+                                    matheus.calache@rpteccom.com </a>
+                            </p>
+                            <p class="lead text-white">
+                                <a href="mailto:murilo.gomes@rpteccom.com" class="text-white">
+                                    murilo.gomes@rpteccom.com </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"></script>
+
+    <!-- Script: Smooth scrolling between anchors in a same page -->
+    <script src="assets/js/smooth-scroll.js"></script>
+
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
